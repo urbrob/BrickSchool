@@ -26,3 +26,12 @@ class Properties(models.Model):
 class school_class(models.Model):
     specjalization = models.CharField(max_length=255)
     school = models.ForeignKey(School, on_delete=models.CASCADE)
+
+class final_exam(models.Model):
+    subject = models.CharField(max_length=100)
+    extended = models.BooleanField()
+    avg_rate = models.IntegerField()
+    pass_rate = models.IntegerField()
+    statistic = models.IntegerField()
+    number_of_ppl = models.IntegerField()
+    statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
