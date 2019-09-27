@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class School(models.Model):
 	name = models.TextField(max_length=250)
 	city = models.TextField(max_length=250)
