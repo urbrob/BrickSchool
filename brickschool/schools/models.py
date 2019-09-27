@@ -56,3 +56,8 @@ class Location(models.Model):
     county = models.CharField(max_length=250)
     community = models.CharField(max_length=250)
     postal_code = models.CharField(max_length=6)
+
+
+class Badges(models.Model):
+	badge_type = models.CharField(max_length=100)
+	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
