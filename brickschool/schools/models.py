@@ -23,9 +23,11 @@ class Properties(models.Model):
     staff_amount = models.IntegerField()
     school = models.ForeignKey(School, on_delete=models.CASCADE)
 
+
 class school_class(models.Model):
     specjalization = models.CharField(max_length=255)
     school = models.ForeignKey(School, on_delete=models.CASCADE)
+
 
 class final_exam(models.Model):
     subject = models.CharField(max_length=100)
@@ -35,3 +37,23 @@ class final_exam(models.Model):
     statistic = models.IntegerField()
     number_of_ppl = models.IntegerField()
     statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
+
+
+class Location(models.Model):
+    voivodship = models.CharField(max_length=50)
+    city = models.CharField(max_length=100)
+    street = models.CharField(max_length=250)
+    house_number = models.CharField(max_length=50)
+    county = models.CharField(max_length=250)
+    community = models.CharField(max_length=250)
+    postal_code = models.CharField(max_length=6)
+    id = models.CharField(max_length=14)
+
+
+class Statistics(models.Model):
+    students = models.IntegerField()
+    girls = models.IntegerField()
+    boys = models.IntegerField()
+    school = models.CharField(max_length=14)
+    year = models.IntegerField()
+    sport_ranking = models.IntegerField(default=0)
