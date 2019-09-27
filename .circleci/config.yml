@@ -5,7 +5,7 @@ jobs:
       - image: circleci/python:3.6.8-jessie
     steps:
       - checkout
-      - run: cd
+      - run: cd BrickSchool
       - run: pip3 install -r requirements.txt
       - run: python3 manage.py test
 
