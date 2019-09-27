@@ -9,52 +9,47 @@ const HomePage = () => {
   return (
     <div>
       <Layout className="layout" style={{ height: "100vh" }}>
-        <Header>
+        <Header
+          style={{
+            display: "flex",
+            justifyContent: "flex-end"
+          }}
+        >
+          <div style={{ width: "20%" }}>
+            <img src={logo} height="20px" />
+          </div>
           <Menu
             theme="dark"
             mode="horizontal"
             style={{
+              width: "80%",
               lineHeight: "64px",
-              justifySelf: "center",
-              backgroundColor: "red",
+              justifySelf: "flex-end",
               textAlign: "right"
             }}
           >
-            <Menu.Item style={{ backgroundColor: "blue" }}>
-              Menu item 1
-            </Menu.Item>
-            <Menu.Item style={{ backgroundColor: "blue" }}>
-              Menu item 2
-            </Menu.Item>
-            <Menu.Item style={{ backgroundColor: "blue" }}>
-              Menu item 3
-            </Menu.Item>
+            <Menu.Item>Menu item 1</Menu.Item>
+            <Menu.Item>Menu item 2</Menu.Item>
+            <Menu.Item>Menu item 3</Menu.Item>
           </Menu>
         </Header>
-        <Content
-          title="logo"
-          style={{
-            height: "10%",
-            textAlign: "center",
-            margin: "50px 0 0"
-          }}
-        >
-          <img src={logo} height="70%" />
-        </Content>
         <Content
           title="contentContainer"
           style={{
             padding: "0 50px",
             height: "60%",
-            textAlign: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             backgroundImage: { ...background },
-            margin: "30px"
+            backgroundColor: "red"
           }}
         >
-          Searchbox placeholder
+          <h1>Searchbox placeholder</h1>
         </Content>
         <Footer
           style={{ textAlign: "center", height: "10%", padding: "20px 0" }}
+          theme="dark"
         >
           BlueBrick Hackathon ©2019 Created by Team Ogryzek
         </Footer>
