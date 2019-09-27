@@ -1,36 +1,38 @@
 import React from "react";
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout } from "antd";
+import logo from "./images/logo.png";
 
-const { Header, Footer, Content } = Layout;
+const { Footer, Content } = Layout;
 
 const HomePage = () => {
   return (
     <div>
-      <Layout className="layout">
-        <Header>
-          <div className="logo" />
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            defaultSelectedKeys={["2"]}
-            style={{ lineHeight: "64px" }}
-          >
-            <Menu.Item key="1">nav 1</Menu.Item>
-            <Menu.Item key="2">nav 2</Menu.Item>
-            <Menu.Item key="3">nav 3</Menu.Item>
-          </Menu>
-        </Header>
-        <Content style={{ padding: "0 50px" }}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>List</Breadcrumb.Item>
-            <Breadcrumb.Item>App</Breadcrumb.Item>
-          </Breadcrumb>
-          <div style={{ background: "#fff", padding: 24, minHeight: 280 }}>
-            Content
-          </div>
+      <Layout className="layout" style={{ height: "100vh" }}>
+        <Content
+          title="logo"
+          style={{
+            height: "10%",
+            textAlign: "center",
+            margin: "50px 0 0"
+          }}
+        >
+          <img src={logo} height="70%" />
         </Content>
-        <Footer style={{ textAlign: "center" }}>
+        <Content
+          title="searchBox"
+          style={{
+            padding: "0 50px",
+            height: "60%",
+            textAlign: "center",
+            background: "#fff",
+            margin: "30px 20px"
+          }}
+        >
+          Searchbox placeholder
+        </Content>
+        <Footer
+          style={{ textAlign: "center", height: "10%", padding: "20px 0" }}
+        >
           Ant Design ©2018 Created by Ant UED
         </Footer>
       </Layout>
