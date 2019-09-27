@@ -24,7 +24,7 @@ class Properties(models.Model):
     school = models.ForeignKey(School, on_delete=models.CASCADE)
 
 
-class school_class(models.Model):
+class SchoolClass(models.Model):
     specjalization = models.CharField(max_length=255)
     school = models.ForeignKey(School, on_delete=models.CASCADE)
 
