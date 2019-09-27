@@ -1,40 +1,59 @@
 import React from "react";
 import { Layout } from "antd";
-import logo from "./images/logo.png";
-import StartingCard from "../components/home/StartingCard"
+import { Layout, Menu } from "antd";
+import logo from "../images/logo.png";
+import background from "../images/bg1.jpg";
 
-const { Footer, Content } = Layout;
+const { Footer, Content, Header } = Layout;
 
 const HomePage = () => {
   return (
     <div>
       <Layout className="layout" style={{ height: "100vh" }}>
-        <Content
-          title="logo"
+        <Header
           style={{
-            height: "10%",
-            textAlign: "center",
-            margin: "50px 0 0"
+            display: "flex",
+            justifyContent: "flex-end"
           }}
         >
-          <img src={logo} height="70%" />
-        </Content>
+          <div style={{ width: "20%" }}>
+            <img src={logo} height="20px" />
+          </div>
+          <Menu
+            theme="dark"
+            mode="horizontal"
+            style={{
+              width: "80%",
+              lineHeight: "64px",
+              justifySelf: "flex-end",
+              textAlign: "right"
+            }}
+          >
+            <Menu.Item>Menu item 1</Menu.Item>
+            <Menu.Item>Menu item 2</Menu.Item>
+            <Menu.Item>Menu item 3</Menu.Item>
+          </Menu>
+        </Header>
         <Content
-          title="searchBox"
+          title="contentContainer"
           style={{
             padding: "0 50px",
             height: "60%",
-            textAlign: "center",
-            background: "#fff",
-            margin: "30px 20px"
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundImage: { ...background },
+            backgroundColor: "red"
           }}
         >
-          <StartingCard/>
+          <h1>Searchbox placeholder</h1>
+
         </Content>
         <Footer
           style={{ textAlign: "center", height: "10%", padding: "20px 0" }}
+          theme="dark"
         >
-          Ant Design ©2018 Created by Ant UED
+          BlueBrick Hackathon ©2019 Created by Team Ogryzek
         </Footer>
       </Layout>
       ,
