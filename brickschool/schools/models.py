@@ -22,3 +22,7 @@ class Properties(models.Model):
     specjalization = models.CharField(max_length=255)
     staff_amount = models.IntegerField()
     school = models.ForeignKey(School, on_delete=models.CASCADE)
+
+class school_class(models.Model):
+    specjalization = models.CharField(max_length=255)
+    school = models.ForeignKey(School, on_delete=models.CASCADE)
