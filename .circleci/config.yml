@@ -6,6 +6,7 @@ jobs:
     steps:
       - checkout
       - run: cd brickschool
+      - run: ls
       - run: pip3 install -r requirements.txt
       - run: python3 manage.py test
 
