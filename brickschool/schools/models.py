@@ -29,6 +29,15 @@ class school_class(models.Model):
     school = models.ForeignKey(School, on_delete=models.CASCADE)
 
 
+class Statistics(models.Model):
+    students = models.IntegerField()
+    girls = models.IntegerField()
+    boys = models.IntegerField()
+    school = models.CharField(max_length=14)
+    year = models.IntegerField()
+    sport_ranking = models.IntegerField(default=0)
+
+
 class final_exam(models.Model):
     subject = models.CharField(max_length=100)
     extended = models.BooleanField()
@@ -47,13 +56,3 @@ class Location(models.Model):
     county = models.CharField(max_length=250)
     community = models.CharField(max_length=250)
     postal_code = models.CharField(max_length=6)
-    id = models.CharField(max_length=14)
-
-
-class Statistics(models.Model):
-    students = models.IntegerField()
-    girls = models.IntegerField()
-    boys = models.IntegerField()
-    school = models.CharField(max_length=14)
-    year = models.IntegerField()
-    sport_ranking = models.IntegerField(default=0)
