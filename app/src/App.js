@@ -8,7 +8,7 @@ import {
 import ApolloClient from "apollo-boost";
 import {ApolloProvider} from "react-apollo";
 import NotFound from "./views/404"
-import Home from "./views/Home"
+import HomePage from "./views/Home"
 
 
 export const client = new ApolloClient({
@@ -20,7 +20,7 @@ function App() {
         <ApolloProvider client={client}>
             <Router>
                 <Switch>
-                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/" component={HomePage}/>
                     <Route exact path="/404" component={NotFound}/>
                     <Redirect to="/404"/>
                 </Switch>

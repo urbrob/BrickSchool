@@ -1,6 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 import logo from "./images/logo.png";
+import StartingCard from "../components/home/StartingCard"
 
 const { Footer, Content } = Layout;
 
@@ -28,7 +29,7 @@ const HomePage = () => {
             margin: "30px 20px"
           }}
         >
-          Searchbox placeholder
+          <StartingCard/>
         </Content>
         <Footer
           style={{ textAlign: "center", height: "10%", padding: "20px 0" }}
