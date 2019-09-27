@@ -6,5 +6,6 @@ jobs:
     steps:
       - checkout
       - run: pip3 install -r brickschool/requirements.txt --user
+      - run: python3 brickschool/manage.py migrate
       - run: python3 brickschool/manage.py test
 
