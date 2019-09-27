@@ -1,11 +1,10 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/brickschool
     docker:
       - image: circleci/python:3.6.8-jessie
     steps:
       - checkout
-      - run: pip3 install -r requirements.txt
-      - run: python3 manage.py test
+      - run: pip3 install -r brickschool/requirements.txt
+      - run: python3 brickschool/manage.py test
 
