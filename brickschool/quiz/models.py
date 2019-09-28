@@ -9,14 +9,14 @@ class Quiz(models.Model):
 
 class Question(models.Model):
     CATEGORIES_CHOICES = (
-        ('0', 'Inteligencja logiczno-matematyczna'),
-        ('1', 'Inteligencja lingwistyczna'),
-        ('2', 'Inteligencja muzyczna'),
-        ('3', 'Inteligencja interpersonalna'),
-        ('4', 'Inteligencja intrapersonalna'),
-        ('5', 'Inteligencja fizyczno-kinestetyczna'),
-        ('6', 'Inteligencja przyrodnicza'),
-        ('7', 'Inteligencja wizualno-przestrzenna'),
+        ('Inteligencja logiczno-matematyczna', 'Inteligencja logiczno-matematyczna'),
+        ('Inteligencja lingwistyczna', 'Inteligencja lingwistyczna'),
+        ('Inteligencja muzyczna', 'Inteligencja muzyczna'),
+        ('Inteligencja interpersonalna', 'Inteligencja interpersonalna'),
+        ('Inteligencja intrapersonalna', 'Inteligencja intrapersonalna'),
+        ('Inteligencja fizyczno-kinestetyczna', 'Inteligencja fizyczno-kinestetyczna'),
+        ('Inteligencja przyrodnicza', 'Inteligencja przyrodnicza'),
+        ('Inteligencja wizualno-przestrzenna', 'Inteligencja wizualno-przestrzenna'),
     )
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     title = models.CharField(max_length=250)
