@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import School, SchoolClass, Statistics, final_exam, Badges
+from .models import School, SchoolClass, Statistics, FinalExam, Badges
 
 # Register your models here.
 
