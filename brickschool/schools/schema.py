@@ -6,7 +6,7 @@ from graphene import relay
 
 
 class SchoolFilter(django_filters.FilterSet):
-    #name = django_filters.CharFilter(method=filter_cs)
+    name = django_filters.CharFilter(method=['contains'])
     class Meta:
         model = School
         fields = ['name',
@@ -31,7 +31,7 @@ class SchoolNode(DjangoObjectType):
 
 
 class SchoolClassFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(lookup_type=['icontains'])
+    name = django_filters.CharFilter(lookup_type=['contains'])
     fields = ['specialization',
             'school',
             ]
@@ -44,7 +44,7 @@ class SchoolClassNode(DjangoObjectType):
 
 
 class StatisticsClassFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(lookup_type=['icontains'])
+    name = django_filters.CharFilter(lookup_type=['contains'])
     fields = ['students',
             'girls',
             'boys',
@@ -62,7 +62,7 @@ class StatisticsNode(DjangoObjectType):
 
 
 class FinalExamFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(lookup_type=['icontains'])
+    name = django_filters.CharFilter(lookup_type=['contains'])
     fields = ['subject',
             'avg_rate',
             'pass_rate',
@@ -96,5 +96,7 @@ class Query(graphene.ObjectType):
 
     def resolve_schools_list(self, info, school_name=None):
         if school_name:
-            return School.objects.filter(name__startswith=school_name)[:10].values_list('name', flat=True)
+            #return School.objects.filter(name__startswith=school_name)[:10].values_list('name', flat=True)
+            return School.objects.filter(name__contains=school_name)[:10].values_list('name', flat=True)
         return []
+
