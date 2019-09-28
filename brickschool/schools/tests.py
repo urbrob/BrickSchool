@@ -18,26 +18,37 @@ class APITest(TestCase):
         data = executed.get('data')
         self.assertEqual(data['test'], None)
 
-# class SchoolTest(TestCase):
-#     def all_school(self):
-#         school = SchoolFactory()
-#         school2 = SchoolFactory()
-#         query = '''
-#         {
-#           schools
-#         }
-#         '''
-#         executed = execute_test_client_api_query(query)
-#         data = executed.get('data')
-#         self.assertEqual(data['name'], school.name)
-#         self.assertEqual(data['city'], school.city)
-#         self.assertEqual(data['type_school'], school.type_school)
-#         self.assertEqual(data['patron'], school.patron)
-#         self.assertEqual(data['website'], school.website)
-#         self.assertEqual(data['regon'], school.regon)
-#         self.assertEqual(data['voivodship'], school.voivodship)
-#         self.assertEqual(data['street'], school.street)
-#         self.assertEqual(data['house_number'], school.house_number)
-#         self.assertEqual(data['country'], school.county)
-#         self.assertEqual(data['community'], school.community)
-#         self.assertEqual(data['postal_code'], school.postal_code)
+class SchoolTest(TestCase):
+    def test_all_school(self):
+        school = SchoolFactory()
+        school2 = SchoolFactory()
+        query = '''
+        {
+          schools {
+            id
+            name
+          }
+        }
+        '''
+        executed = execute_test_client_api_query(query)
+        data = executed.get('data')
+        self.assertEqual(data['schools'][0]['name'], school.name)
+        self.assertEqual(data['schools'][1]['name'], school2.name)
+
+    def test_pagination_school(self):
+        schools = []
+        for i in range(8):
+            schools.append(SchoolFactory())
+
+        query = '''
+        {
+          schools(first:2, skip:5) {
+            id
+            name
+          }
+        }
+        '''
+        executed = execute_test_client_api_query(query)
+        data = executed.get('data')
+        self.assertEqual(data['schools'][0]['name'], schools[5].name)
+        self.assertEqual(data['schools'][1]['name'], schools[6].name)
