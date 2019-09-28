@@ -18,8 +18,7 @@ const HomePage = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundImage: { ...background },
-            backgroundColor: "red"
+            backgroundImage: { ...background }
           }}
         >
           <h1>Searchbox placeholder</h1>

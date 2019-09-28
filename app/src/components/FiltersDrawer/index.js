@@ -17,8 +17,15 @@ const FiltersDrawer = () => {
 
   return (
     <div>
-      <Button type="primary" onClick={showDrawer}>
-        <Icon /> Filter
+      <Button
+        type="primary"
+        style={{
+          backgroundColor: "#ffae3c",
+          borderColor: "#ffae3c"
+        }}
+        onClick={showDrawer}
+      >
+        <b>Filter</b> <Icon type="right" />
       </Button>
       <Drawer
         title="Create a new account"

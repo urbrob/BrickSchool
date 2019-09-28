@@ -8,7 +8,8 @@ const HeaderMenu = () => (
   <Header
     style={{
       display: "flex",
-      justifyContent: "flex-end"
+      justifyContent: "flex-end",
+      backgroundColor: "#505050"
     }}
   >
     <div style={{ width: "20%" }}>
@@ -21,7 +22,8 @@ const HeaderMenu = () => (
         width: "80%",
         lineHeight: "64px",
         justifySelf: "flex-end",
-        textAlign: "right"
+        textAlign: "right",
+        backgroundColor: "inherit"
       }}
     >
       <Menu.Item>Menu item 1</Menu.Item>
