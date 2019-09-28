@@ -7,7 +7,9 @@
 .logo {
   width: 20%;
   height: 100%;
-  padding: 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 img {
   height: 100%;

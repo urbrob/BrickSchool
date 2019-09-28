@@ -31,46 +31,15 @@ class SchoolNode(DjangoObjectType):
         interfaces = (relay.Node, )
 
 
-class SchoolClassFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(lookup_type=['contains'])
-    fields = ['specialization',
-            'school',
-            ]
-
-
 class SchoolClassNode(DjangoObjectType):
     class Meta:
         model = SchoolClass
-        filterset_class = SchoolClassFilter
-
-
-class StatisticsClassFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(lookup_type=['contains'])
-    fields = ['students',
-            'girls',
-            'boys',
-            'school',
-            'year',
-            'staff_amount',
-            'sport_ranking',
-            ]
 
 
 class StatisticsNode(DjangoObjectType):
     class Meta:
         model = Statistics
-        filterset_class = StatisticsClassFilter
 
-
-class FinalExamFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(lookup_type=['contains'])
-    fields = ['subject',
-            'avg_rate',
-            'pass_rate',
-            'is_extended',
-            'number_of_people',
-            'statistic',
-            ]
 
 class FinalExamNode(DjangoObjectType):
     class Meta:
