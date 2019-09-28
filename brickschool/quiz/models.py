@@ -2,7 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Quiz(models.Model):
-    name = models.CharField(max_length=250)
+    title = models.CharField(max_length=250)
+    def __str__(self):
+        return self.title
 
 
 class Question(models.Model):
@@ -19,3 +21,5 @@ class Question(models.Model):
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     title = models.CharField(max_length=250)
     category = models.CharField(max_length=100, choices=CATEGORIES_CHOICES, default='0')
+    def __str__(self):
+        return self.title
