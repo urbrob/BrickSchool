@@ -1,7 +1,6 @@
 import graphene
-from .models import School, SchoolClass, Statistics, FinalExam, Badges
+from .models import School, SchoolClass, Statistics, FinalExam
 from graphene_django.types import DjangoObjectType
-from graphene_django.filter import DjangoFilterConnectionField
 import django_filters
 from graphene import relay
 
@@ -17,11 +16,10 @@ class SchoolFilter(django_filters.FilterSet):
                 'website',
                 'regon',
                 'voivodship',
-                'street',
-                'house_number',
                 'county',
                 'community',
                 'postal_code',
+                'location',
                 ]
 
 
@@ -78,20 +76,6 @@ class FinalExamNode(DjangoObjectType):
     class Meta:
         model = FinalExam
         filterset_class = [FinalExamFilter]
-
-
-class BadgesNodeFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(lookup_type=['icontains'])
-    fields = ['badge_type',
-            'statistic',
-            ]
-
-
-class BadgesNode(DjangoObjectType):
-    class Meta:
-        model = Badges
-        filterset_class = [BadgesNodeFilter]
-
 
 class Query(graphene.ObjectType):
     schools = graphene.List(
