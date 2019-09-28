@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import { Carousel } from 'antd';
 
 export class StartingCard extends Component {
     constructor(){
         super();
         this.state={
-            isClicked: true
+            isClicked: false
         }
     }
 
@@ -17,7 +17,10 @@ export class StartingCard extends Component {
         }
         else{
             return(
-              <div>xD nie pyklo</div>
+                <Fragment>
+                    
+                </Fragment>
+
             );
         }
 

@@ -1,8 +1,7 @@
 import React from "react";
-import { Layout } from "antd";
 import { Layout, Menu } from "antd";
 import logo from "../images/logo.png";
-import background from "../images/bg1.jpg";
+import StartingCard from "../components/home/StartingCard"
 
 const { Footer, Content, Header } = Layout;
 
@@ -42,11 +41,10 @@ const HomePage = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundImage: { ...background },
             backgroundColor: "red"
           }}
         >
-          <h1>Searchbox placeholder</h1>
+          <StartingCard/>
 
         </Content>
         <Footer
