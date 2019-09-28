@@ -32,10 +32,17 @@ class Statistics(models.Model):
 
 
 class FinalExam(models.Model):
+	BASIC_LEVEL = 'PP'
+	EXTENDED_LEVEL = 'PR'
+	PASS_RATE = 'ZM'
+	DATA_TYPE_CHOICES = (
+		(BASIC_LEVEL, 'Poziom podstawowy'),
+		(EXTENDED_LEVEL, 'Poziom rozszerzony'),
+		(PASS_RATE, 'Zdawalność')
+	)
 	subject = models.CharField(max_length=100)
 	avg_rate = models.IntegerField(null=True)
-	pass_rate = models.IntegerField(null=True)
-	is_extended = models.BooleanField(default=False)
+	data_type = models.CharField(choices=DATA_TYPE_CHOICES, max_length=2)
 	number_of_people = models.IntegerField(null=True)
 	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
 
