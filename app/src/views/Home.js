@@ -1,29 +1,16 @@
 import React from "react";
 import { Layout } from "antd";
-import background from "../images/bg1.jpg";
 import HeaderMenu from "../components/HeaderMenu";
 import FooterCredits from "../components/FooterCredits";
+import HomeSearchBox from "../components/HomeSearchBox/HomeSearchBox";
 
-
-const { Content } = Layout;
 
 const HomePage = () => {
   return (
     <div>
       <Layout className="layout" style={{ height: "100vh" }}>
         <HeaderMenu />
-        <Content
-          title="contentContainer"
-          style={{
-            height: "60%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "red"
-          }}
-        >
-
-        </Content>
+        <HomeSearchBox/>
         <FooterCredits />
       </Layout>
     </div>
