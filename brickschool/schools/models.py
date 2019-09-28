@@ -11,13 +11,13 @@ class School(models.Model):
 	voivodship = models.CharField(max_length=50, null=True)
 	street = models.CharField(max_length=250, null=True)
 	house_number = models.CharField(max_length=50, null=True)
-	county = models.CharField(max_length=250, null=True)
+	country = models.CharField(max_length=250, null=True)
 	community = models.CharField(max_length=250, null=True)
 	postal_code = models.CharField(max_length=6, null=True)
 
 
 class SchoolClass(models.Model):
-	specjalization = models.CharField(max_length=255, null=True)
+	specialization = models.CharField(max_length=255, null=True)
 	school = models.ForeignKey(School, on_delete=models.CASCADE)
 
 
