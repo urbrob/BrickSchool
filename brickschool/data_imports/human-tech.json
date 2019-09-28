@@ -1,0 +1,690 @@
+{
+    "mth_2016":{
+        "okres":3,
+        "nazwa":"przedmioty humanistyczne",
+        "kolejnosc":25,
+        "do_prezentacji":true,
+        "kolor":240,
+        "skrot":"humanistyczny",
+        "os_y":"hum.",
+        "egz_dop":"maturalnego",
+        "opis":"Przeliczenie 2016: 3-letnie śr. wyniki i EWD T w zakresie przedm. hum. - bez trendu, modelem mieszanych efektów, matura skalowana wielogrupowo.",
+        "grupa":"przedmioty humanistyczne",
+        "rodzaj_wsk":"ewd",
+        "wskaznik":"mth_2016",
+        "szkoly":[
+            {
+                "idSzkoly":78879,
+                "nazwa":"Akademia-Technikum dla Młodzieży w Łodzi",
+                "adres":"Kilińskiego 21, 90-205 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla tej szkoły dysponujemy wynikami tylko dla 2 lat. W związku z tym wyznaczenie pozycji szkoły na wykresie może być mniej precyzyjne.",
+                        "kolor":"background-color: rgb(0, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":58,
+                            "j. polski łącznie":58,
+                            "j. polski rozszerzona":17,
+                            "historia łącznie":1,
+                            "historia rozszerzona":1,
+                            "WOS łącznie":1,
+                            "WOS rozszerzona":1
+                        },
+                        "ewd":{
+                            "min":-11.12698478512219,
+                            "pkt":"-7.64389",
+                            "max":-4.160795214877812
+                        },
+                        "egz":{
+                            "min":84.95185031085506,
+                            "pkt":"89.0999",
+                            "max":93.24794968914495
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23139,
+                "nazwa":"Liceum Plastyczne w Zespole Państwowych Szkół Plastycznych im. T. Makowskiego w Łodzi",
+                "adres":"Gandhiego 14, 91-012 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(73, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":124,
+                            "j. polski łącznie":124,
+                            "j. polski rozszerzona":49,
+                            "historia łącznie":11,
+                            "historia rozszerzona":11,
+                            "WOS łącznie":2,
+                            "WOS rozszerzona":2
+                        },
+                        "ewd":{
+                            "min":-1.474824087827859,
+                            "pkt":"1.00795",
+                            "max":3.490724087827859
+                        },
+                        "egz":{
+                            "min":104.361077561673,
+                            "pkt":"107.303",
+                            "max":110.244922438327
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26889,
+                "nazwa":"Technikum nr 10 w Zespole Szkół Ponadgimnazjalnych nr 10 im. Jana Szczepanika w Łodzi",
+                "adres":"Strykowska 10/18, 91-725 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(146, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":354,
+                            "j. polski łącznie":354,
+                            "j. polski rozszerzona":10,
+                            "historia łącznie":2,
+                            "historia rozszerzona":2,
+                            "WOS łącznie":2,
+                            "WOS rozszerzona":2
+                        },
+                        "ewd":{
+                            "min":-1.334510291245258,
+                            "pkt":"0.172494",
+                            "max":1.679498291245258
+                        },
+                        "egz":{
+                            "min":102.8639399164798,
+                            "pkt":"104.62",
+                            "max":106.3760600835202
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26894,
+                "nazwa":"Technikum nr 12 w Zespole Szkół Przemysłu Mody w Łodzi",
+                "adres":"Naruszewicza 35, 93-161 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(219, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":107,
+                            "j. polski łącznie":107,
+                            "j. polski rozszerzona":20,
+                            "historia łącznie":0,
+                            "historia rozszerzona":0,
+                            "WOS łącznie":31,
+                            "WOS rozszerzona":31
+                        },
+                        "ewd":{
+                            "min":-4.643544410020958,
+                            "pkt":"-1.98676",
+                            "max":0.6700244100209576
+                        },
+                        "egz":{
+                            "min":92.80510864672674,
+                            "pkt":"96.2626",
+                            "max":99.72009135327328
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26888,
+                "nazwa":"Technikum nr 13 w Zespole Szkół Geodezyjno-Technicznych im. Sybiraków",
+                "adres":"Skrzydlata 15, 91-503 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 219);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":253,
+                            "j. polski łącznie":253,
+                            "j. polski rozszerzona":13,
+                            "historia łącznie":6,
+                            "historia rozszerzona":6,
+                            "WOS łącznie":3,
+                            "WOS rozszerzona":3
+                        },
+                        "ewd":{
+                            "min":-1.510684269158613,
+                            "pkt":"0.262067",
+                            "max":2.034818269158613
+                        },
+                        "egz":{
+                            "min":98.41408112215181,
+                            "pkt":"100.457",
+                            "max":102.4999188778482
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26897,
+                "nazwa":"Technikum nr 15 w Zespole Szkół Ponadgimnazjalnych nr 15 im. dra Stefana Kopcińskiego w Łodzi",
+                "adres":"Kopcińskiego 5/11, 90-242 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 146);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":80,
+                            "j. polski łącznie":80,
+                            "j. polski rozszerzona":10,
+                            "historia łącznie":0,
+                            "historia rozszerzona":0,
+                            "WOS łącznie":0,
+                            "WOS rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-5.837813721196453,
+                            "pkt":"-2.80929",
+                            "max":0.2192337211964537
+                        },
+                        "egz":{
+                            "min":91.75893207156075,
+                            "pkt":"95.7492",
+                            "max":99.73946792843925
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26891,
+                "nazwa":"Technikum nr 17 w Zespole Szkół Techniczno-Informatycznych im. Jana Nowaka-Jeziorańskiego w Łodzi",
+                "adres":"Al. Politechniki 37, 93-502 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 73);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":152,
+                            "j. polski łącznie":152,
+                            "j. polski rozszerzona":10,
+                            "historia łącznie":4,
+                            "historia rozszerzona":4,
+                            "WOS łącznie":4,
+                            "WOS rozszerzona":4
+                        },
+                        "ewd":{
+                            "min":-3.651191225986121,
+                            "pkt":"-1.3929",
+                            "max":0.8653912259861207
+                        },
+                        "egz":{
+                            "min":97.33232718986618,
+                            "pkt":"99.9311",
+                            "max":102.5298728101338
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26904,
+                "nazwa":"Technikum nr 18 w Zespole Szkół Poligraficznych im. Mikołaja Reja w Łodzi",
+                "adres":"Edwarda 41, 92-229 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":68,
+                            "j. polski łącznie":68,
+                            "j. polski rozszerzona":18,
+                            "historia łącznie":1,
+                            "historia rozszerzona":1,
+                            "WOS łącznie":0,
+                            "WOS rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-4.076597375950202,
+                            "pkt":"-0.823909",
+                            "max":2.428779375950203
+                        },
+                        "egz":{
+                            "min":92.29068893286313,
+                            "pkt":"96.56",
+                            "max":100.8293110671369
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":31604,
+                "nazwa":"Technikum nr 19 w CKZiU w Łodzi",
+                "adres":"Stefana Żeromskiego 115, 90-542 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 72, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":393,
+                            "j. polski łącznie":393,
+                            "j. polski rozszerzona":63,
+                            "historia łącznie":12,
+                            "historia rozszerzona":12,
+                            "WOS łącznie":21,
+                            "WOS rozszerzona":21
+                        },
+                        "ewd":{
+                            "min":-4.257342341770419,
+                            "pkt":"-2.82508",
+                            "max":-1.392817658229581
+                        },
+                        "egz":{
+                            "min":97.44753611627537,
+                            "pkt":"99.1766",
+                            "max":100.9056638837246
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26886,
+                "nazwa":"Technikum nr 1 w Zespole Szkół Ekonomiczno-Turystyczno-Hotelarskich w Łodzi",
+                "adres":"Drewnowska 171, 91-008 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 145, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":273,
+                            "j. polski łącznie":273,
+                            "j. polski rozszerzona":79,
+                            "historia łącznie":9,
+                            "historia rozszerzona":9,
+                            "WOS łącznie":10,
+                            "WOS rozszerzona":10
+                        },
+                        "ewd":{
+                            "min":1.261197849299639,
+                            "pkt":"2.9702",
+                            "max":4.679202150700362
+                        },
+                        "egz":{
+                            "min":102.4949250057082,
+                            "pkt":"104.518",
+                            "max":106.5410749942918
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26881,
+                "nazwa":"Technikum nr 21 w Zespole Szkół Rzemiosła im. Jana Kilińskiego w Łodzi",
+                "adres":"Żubardzka 2, 91-022 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 217, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":68,
+                            "j. polski łącznie":68,
+                            "j. polski rozszerzona":12,
+                            "historia łącznie":1,
+                            "historia rozszerzona":1,
+                            "WOS łącznie":9,
+                            "WOS rozszerzona":9
+                        },
+                        "ewd":{
+                            "min":-4.744538375950203,
+                            "pkt":"-1.49185",
+                            "max":1.760838375950203
+                        },
+                        "egz":{
+                            "min":94.52476991295786,
+                            "pkt":"98.4524",
+                            "max":102.3800300870421
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":31603,
+                "nazwa":"Technikum nr 22 im. gen. Stanisława Maczka w Zespole Szkół Samochodowych i Mechatronicznych w Łodzi",
+                "adres":"Przybyszewskiego 73/75, 93-126 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(221, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":69,
+                            "j. polski łącznie":69,
+                            "j. polski rozszerzona":2,
+                            "historia łącznie":0,
+                            "historia rozszerzona":0,
+                            "WOS łącznie":1,
+                            "WOS rozszerzona":1
+                        },
+                        "ewd":{
+                            "min":-7.80613834763587,
+                            "pkt":"-4.57406",
+                            "max":-1.34198165236413
+                        },
+                        "egz":{
+                            "min":86.71615866580217,
+                            "pkt":"90.6093",
+                            "max":94.50244133419784
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26893,
+                "nazwa":"Technikum nr 2 w Zespole Szkół Ekonomii i Usług im. Natalii Gąsiorowskiej",
+                "adres":"Astronautów 19, 93-533 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(149, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":205,
+                            "j. polski łącznie":205,
+                            "j. polski rozszerzona":28,
+                            "historia łącznie":3,
+                            "historia rozszerzona":3,
+                            "WOS łącznie":5,
+                            "WOS rozszerzona":5
+                        },
+                        "ewd":{
+                            "min":-0.02493751051478377,
+                            "pkt":"1.9356",
+                            "max":3.896137510514784
+                        },
+                        "egz":{
+                            "min":99.94401504928283,
+                            "pkt":"102.295",
+                            "max":104.6459849507172
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26898,
+                "nazwa":"Technikum nr 3 w Zespole Szkół Ponadgimnazjalnych nr 3",
+                "adres":"Kilińskiego 159/163, 90-315 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(77, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":230,
+                            "j. polski łącznie":230,
+                            "j. polski rozszerzona":5,
+                            "historia łącznie":6,
+                            "historia rozszerzona":6,
+                            "WOS łącznie":6,
+                            "WOS rozszerzona":6
+                        },
+                        "ewd":{
+                            "min":1.802194381736937,
+                            "pkt":"3.65789",
+                            "max":5.513585618263063
+                        },
+                        "egz":{
+                            "min":102.697044173511,
+                            "pkt":"104.853",
+                            "max":107.008955826489
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26890,
+                "nazwa":"Technikum nr 5 w Zespole Szkół Ponadgimnazjalnych nr 5 im. Króla Bolesława Chrobrego w Łodzi",
+                "adres":"Drewnowska 88, 91-008 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":150,
+                            "j. polski łącznie":150,
+                            "j. polski rozszerzona":35,
+                            "historia łącznie":4,
+                            "historia rozszerzona":4,
+                            "WOS łącznie":45,
+                            "WOS rozszerzona":45
+                        },
+                        "ewd":{
+                            "min":1.96650381171211,
+                            "pkt":"4.23885",
+                            "max":6.51119618828789
+                        },
+                        "egz":{
+                            "min":99.28740299592575,
+                            "pkt":"102.138",
+                            "max":104.9885970040743
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26882,
+                "nazwa":"Technikum nr 6 w Zespole Szkół Przemysłu Spożywczego im. Powstańców Wielkopolskich w Łodzi",
+                "adres":"Franciszkańska 137, 91-845 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 72);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":47,
+                            "j. polski łącznie":47,
+                            "j. polski rozszerzona":1,
+                            "historia łącznie":6,
+                            "historia rozszerzona":6,
+                            "WOS łącznie":0,
+                            "WOS rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-8.195281412853387,
+                            "pkt":"-4.39185",
+                            "max":-0.5884185871466139
+                        },
+                        "egz":{
+                            "min":86.53090128153943,
+                            "pkt":"91.2259",
+                            "max":95.92089871846056
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26885,
+                "nazwa":"Technikum nr 7 w Zespole Szkół Samochodowych w Łodzi",
+                "adres":"Wojciecha Kilara 3/5, 91-335 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 145);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":134,
+                            "j. polski łącznie":134,
+                            "j. polski rozszerzona":3,
+                            "historia łącznie":5,
+                            "historia rozszerzona":5,
+                            "WOS łącznie":0,
+                            "WOS rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-6.115530273821179,
+                            "pkt":"-3.72041",
+                            "max":-1.325289726178822
+                        },
+                        "egz":{
+                            "min":90.4117831210305,
+                            "pkt":"93.2837",
+                            "max":96.1556168789695
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26892,
+                "nazwa":"Technikum nr 9 w Zespole Szkół Ponadgimnazjalnych nr 9 w Łodzi",
+                "adres":"Al. Politechniki 38, 93-590 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 217);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":305,
+                            "j. polski łącznie":305,
+                            "j. polski rozszerzona":12,
+                            "historia łącznie":4,
+                            "historia rozszerzona":4,
+                            "WOS łącznie":5,
+                            "WOS rozszerzona":5
+                        },
+                        "ewd":{
+                            "min":1.639388699708605,
+                            "pkt":"3.25931",
+                            "max":4.879231300291395
+                        },
+                        "egz":{
+                            "min":102.0045063415066,
+                            "pkt":"103.95",
+                            "max":105.8954936584934
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":76799,
+                "nazwa":"Technikum Przy Łódzkiej Szkole Mody Kosmetologii Fryzjerstwa Anagra",
+                "adres":"Łanowa 4, 91-103 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 221, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":40,
+                            "j. polski łącznie":40,
+                            "j. polski rozszerzona":4,
+                            "historia łącznie":2,
+                            "historia rozszerzona":2,
+                            "WOS łącznie":0,
+                            "WOS rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-9.384872145518576,
+                            "pkt":"-5.32477",
+                            "max":-1.264667854481424
+                        },
+                        "egz":{
+                            "min":89.98058568869217,
+                            "pkt":"94.9688",
+                            "max":99.95701431130783
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26883,
+                "nazwa":"Technikum w Zespole Szkół Ponadgimnazjalnych nr 20 im. Marszałka Józefa Piłsudskiego w Łodzi",
+                "adres":"Warecka 41, 91-212 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 149, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":70,
+                            "j. polski łącznie":70,
+                            "j. polski rozszerzona":16,
+                            "historia łącznie":5,
+                            "historia rozszerzona":5,
+                            "WOS łącznie":2,
+                            "WOS rozszerzona":2
+                        },
+                        "ewd":{
+                            "min":-4.408759958814446,
+                            "pkt":"-1.1969",
+                            "max":2.014959958814447
+                        },
+                        "egz":{
+                            "min":91.48414925227624,
+                            "pkt":"95.4518",
+                            "max":99.41945074772377
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26895,
+                "nazwa":"Zespół Szkół Gastronomicznych im. I Armii Wojska Polskiego w Łodzi",
+                "adres":"Sienkiewicza 88, 90-357 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 77, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":282,
+                            "j. polski łącznie":282,
+                            "j. polski rozszerzona":41,
+                            "historia łącznie":10,
+                            "historia rozszerzona":10,
+                            "WOS łącznie":51,
+                            "WOS rozszerzona":51
+                        },
+                        "ewd":{
+                            "min":-7.142253470549443,
+                            "pkt":"-5.45978",
+                            "max":-3.777306529450557
+                        },
+                        "egz":{
+                            "min":93.34908938479494,
+                            "pkt":"95.3452",
+                            "max":97.34131061520507
+                        },
+                        "teryt":106101
+                    }
+                }
+            }
+        ]
+    }
+}
