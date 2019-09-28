@@ -1,6 +1,7 @@
 import graphene
 from schools.models import School
 from graphene_django.types import DjangoObjectType
+from django.db.models import Q
 
 class SchoolNode(DjangoObjectType):
     class Meta:
@@ -15,7 +16,7 @@ class Query(graphene.ObjectType):
     )
 
 
-    def resolve_schools(self, info, search=None, first=None, skip=None, **kwargs):
+    def resolve_schools(self, info, first=None, skip=None, **kwargs):
         schools = School.objects.all()
 
         if skip:
