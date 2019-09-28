@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Drawer, Form, Button, Col, Row, Input, Select, Icon } from "antd";
+import "./index.css";
 
 const { Option } = Select;
 
@@ -30,7 +31,6 @@ const FiltersDrawer = () => {
         width={"50vw"}
         onClose={onClose}
         visible={isVisible}
-
       >
         <Form layout="vertical" hideRequiredMark>
           <Row gutter={16}>
@@ -38,13 +38,10 @@ const FiltersDrawer = () => {
               <Form.Item label="Nazwa szkoły">
                 <Input placeholder="Nazwa" />
               </Form.Item>
-
             </Col>
             <Col span={12}>
               <Form.Item label="Maksymalna odległość">
-                <Input
-                    placeholder={"Max odległość"}
-                />
+                <Input placeholder={"Max odległość"} />
               </Form.Item>
             </Col>
           </Row>
@@ -86,21 +83,8 @@ const FiltersDrawer = () => {
               </Form.Item>
             </Col>
           </Row>
-
-
         </Form>
-        <div
-          style={{
-            position: "absolute",
-            left: 0,
-            bottom: 0,
-            width: "100%",
-            borderTop: "1px solid #e9e9e9",
-            padding: "10px 16px",
-            background: "#505050",
-            textAlign: "right"
-          }}
-        >
+        <div className="filtersBar">
           <Button onClick={onClose} style={{ marginRight: 8 }}>
             Cancel
           </Button>

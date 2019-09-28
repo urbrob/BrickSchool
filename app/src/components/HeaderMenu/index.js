@@ -4,33 +4,11 @@ import logo from "../../images/logo.png";
 import "./index.css";
 
 const HeaderMenu = () => (
-  <div
-    style={{
-      height: "8vh",
-      display: "flex",
-      alignItems: "center",
-      backgroundImage: "linear-gradient(#505050,#5a5a5a)"
-    }}
-  >
-    <div
-      title="logo"
-      style={{
-        width: "20%",
-        height: "100%",
-        padding: "5px 30px"
-      }}
-    >
-      <img src={logo} style={{ height: "100%" }} />
+  <div className="headerWrapper">
+    <div className="logo">
+      <img src={logo} />
     </div>
-    <div
-      title="navMenu"
-      style={{
-        width: "80%",
-        display: "flex",
-        alignContent: "center",
-        justifyContent: "flex-end"
-      }}
-    >
+    <div className="navMenu">
       <div className="NavButtonsWrapper">
         <NavButton redirect="/">Home</NavButton>
         <NavButton redirect="/records">Records</NavButton>
