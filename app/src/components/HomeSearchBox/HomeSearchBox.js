@@ -1,68 +1,139 @@
 import React, { Component, Fragment } from "react";
 import { Carousel } from "react-bootstrap";
-import { Layout } from "antd";
-import { Button } from "antd";
+import {Button} from "antd";
+import {Link} from "react-router-dom"
 
-const { Content } = Layout;
 
 export class HomeSearchBox extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isClicked: false
-    };
-  }
 
   render() {
-    if (this.state.isClicked) {
-      return <div>xD pyklo se</div>;
-    } else {
       return (
-        <Carousel style={{ height: "100%" }}>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={"https://i.imgur.com/AQdGLoJ.jpg"}
-              alt="First slide"
-              style={{ height: "100%" }}
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={"https://i.imgur.com/AQdGLoJ.jpg"}
-              alt="Third slide"
-              style={{ height: "100%" }}
-            />
+          <Carousel>
+            <Carousel.Item
+                style={{
+                  maxHeight:"87vh",
+                }}
+            >
+              <img
+                  className="d-block w-100"
+                  src="https://i.imgur.com/HOOxsgf.jpg"
+                  alt="First slide"
+                  style={{
+                    width:"100%",
 
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={"https://i.imgur.com/AQdGLoJ.jpg"}
-              alt="Third slide"
-              style={{ height: "100%" }}
-            />
+                  }}
+              />
+              <Carousel.Caption
+                  style={{
+                    marginTop:"10%",
+                    marginBottom:"25%",
+                    marginRight:"85%",
+                    marginLeft:"5%"
+                  }}
+              >
+                <h1 style={{
+                  color: "white",
+                  whiteSpace:"nowrap",
+                  textAlign:"justify",
+                  textShadow:"1px 1px 2px black"
+                }}
+                >First slide label</h1>
+                <p
+                    style={{
+                      color: "white",
+                      whiteSpace:"nowrap",
+                      textAlign:"justify",
+                      textShadow:"1px 1px 2px black"
+                    }}
+                >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <Link to={"/records"}>
+                  <Button size={"large"}>Try it now</Button></Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item
+                style={{
+                  maxHeight:"87vh"
+                }}
+            >
+              <img
+                  className="d-block w-100"
+                  src="https://i.imgur.com/fzZXHcq.jpg"
+                  alt="Third slide"
+                  style={{
+                    objectFit:"fill",
+                    width:"100%"
+                  }}
+              />
 
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+              <Carousel.Caption
+                  style={{
+                    marginTop:"3%",
+                    marginBottom:"25%",
+                    marginRight:"90%",
+                    marginLeft:"2%"
+                  }}
+              >
+                <h1 style={{
+                  color: "white",
+                  whiteSpace:"nowrap",
+                  textAlign:"justify",
+                  textShadow:"1px 1px 2px black"
+                }}
+                >First slide label</h1>
+                <p
+                    style={{
+                      color: "white",
+                      whiteSpace:"nowrap",
+                      textAlign:"justify",
+                      textShadow:"1px 1px 2px black"
+                    }}
+                >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <Link to={"/records"}>
+                  <Button size={"large"}>Try it now</Button></Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item
+                style={{
+                  maxHeight:"87vh"
+                }}
+            >
+              <img
+                  className="d-block w-100"
+                  src="https://i.imgur.com/lw7fjBO.jpg"
+                  alt="Third slide"
+              />
+
+              <Carousel.Caption
+                  style={{
+                    marginTop:"3%",
+                    marginBottom:"25%",
+                    marginRight:"90%",
+                    marginLeft:"2%"
+                  }}
+              >
+                <h1 style={{
+                  color: "white",
+                  whiteSpace:"nowrap",
+                  textAlign:"justify",
+                  textShadow:"1px 1px 2px black"
+                }}
+                >First slide label</h1>
+                <p
+                    style={{
+                      color: "white",
+                      whiteSpace:"nowrap",
+                      textAlign:"justify",
+                      textShadow:"1px 1px 2px black"
+                    }}
+                >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <Link to={"/records"}>
+                  <Button size={"large"}>Try it now</Button></Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
       );
     }
-  }
+
 }
 
 export default HomeSearchBox;
