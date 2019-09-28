@@ -1,0 +1,13 @@
+.ContentWrapper {
+  background-color: #505050;
+  height: 87vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .ContentWrapper {
+    height: 80vh;
+  }
+}

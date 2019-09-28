@@ -1,32 +1,33 @@
 import graphene
 from .models import School, SchoolClass, Statistics, FinalExam
 from graphene_django.types import DjangoObjectType
+from graphene_django.filter import DjangoFilterConnectionField
 import django_filters
 from graphene import relay
 
 
 class SchoolFilter(django_filters.FilterSet):
-    name = django_filters.CharFilter(method=['contains'])
+
+    name = django_filters.CharFilter(lookup_expr='startswitch')
+    location = django_filters.CharFilter(lookup_expr='icontains')
+    perspective_badge = django_filters.ChoiceFilter(method='perspective_badge_filter', choices=['gold', 'silver', 'bronze'])
+    wsk = django_filters.NumberFilter(field_name='statistics__perspective_badge', lookup_expr='gt')
+
     class Meta:
         model = School
-        fields = ['name',
-                'city',
-                'type_school',
-                'patron',
-                'website',
-                'regon',
-                'voivodship',
-                'county',
-                'community',
-                'postal_code',
-                'location',
-                ]
+        fields = ['is_public', 'type_school']
 
+    def perspective_badge_filter(self, queryset, name, value):
+        if value == 'gold':
+            return queryset.filter(statistics__perspective_badge__global_rating__lt=100)
+        elif value == 'silver':
+            return queryset.filter(statistics__perspective_badge__global_rating__lt=200)
+        elif value == 'bronze':
+            return queryset.filter(statistics__perspective_badge__global_rating__lt=500)
 
 class SchoolNode(DjangoObjectType):
     class Meta:
         model = School
-        filterset_class = SchoolFilter
         interfaces = (relay.Node, )
 
 
@@ -71,28 +72,18 @@ class FinalExamFilter(django_filters.FilterSet):
             'statistic',
             ]
 
-
 class FinalExamNode(DjangoObjectType):
     class Meta:
         model = FinalExam
-        filterset_class = [FinalExamFilter]
+
 
 class Query(graphene.ObjectType):
-    schools = graphene.List(
+    schools = DjangoFilterConnectionField(
         SchoolNode,
-        first=graphene.Int(),
-        skip=graphene.Int(),
+        filterset_class=SchoolFilter
     )
     schools_list = graphene.List(graphene.String, school_name=graphene.Argument(graphene.String, required=False))
-
-
-    def resolve_schools(self, info, first=None, skip=None, **kwargs):
-        schools = School.objects.all()
-        if skip:
-            schools = schools[skip:]
-        if first:
-            schools = schools[:first]
-        return schools
+    school_detail = graphene.Field(SchoolNode, id=graphene.Argument(graphene.Int, required=True))
 
     def resolve_schools_list(self, info, school_name=None):
         if school_name:
@@ -100,3 +91,5 @@ class Query(graphene.ObjectType):
             return School.objects.filter(name__contains=school_name)[:10].values_list('name', flat=True)
         return []
 
+    def resolve_school_detail(self, info, id):
+        return School.objects.get(id=id)

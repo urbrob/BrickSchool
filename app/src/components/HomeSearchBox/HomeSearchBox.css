@@ -1,11 +1,93 @@
-.ant-carousel .slick-slide {
-    text-align: center;
-    height: 150px;
-    line-height: 150px;
-    background: #364d79;
-    overflow: hidden;
+/* .ant-carousel .slick-slide {
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  background: #364d79;
+  overflow: hidden;
 }
 
 .ant-carousel .slick-slide h3 {
-    color: #fff;
+  color: #fff;
+} */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.carouselBox {
+  max-height: 87vh;
+  width: 100vw;
+}
+
+.slide {
+  width: 100vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .slide {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slide {
+    object-fit: cover;
+    object-position: -500px -50px;
+  }
+}
+
+.carouselCaption {
+  background-color: aqua;
+}
+
+.carouselLabel {
+  font-size: 5vw;
+  color: white;
+  white-space: nowrap;
+  text-align: justify;
+  text-shadow: 1px 1px 2px black;
+}
+
+.carouselPropaganda {
+  color: white;
+  white-space: nowrap;
+  text-align: justify;
+  text-shadow: 1px 1px 2px black;
+  width: 80vw;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .carouselCaption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: aquamarine;
+  }
+
+  .carouselLabel {
+    font-size: 12vw;
+    line-height: 6vh;
+    white-space: normal;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .carouselPropaganda {
+    margin: 10px 0;
+    font-size: 6vw;
+    line-height: 4vh;
+    white-space: normal;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .carouselLink {
+    padding: 5px 10px;
+  }
 }
