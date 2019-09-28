@@ -18,7 +18,7 @@ export class StartingCard extends Component {
         else{
             return(
                 <Fragment>
-                    
+
                 </Fragment>
 
             );
