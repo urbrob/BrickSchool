@@ -8,7 +8,7 @@ export class HomeSearchBox extends Component {
 
   render() {
       return (
-          <Carousel>
+          <Carousel fade={true}>
             <Carousel.Item
                 style={{
                   maxHeight:"87vh",
