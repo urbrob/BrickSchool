@@ -1,0 +1,6 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100vh;
+}

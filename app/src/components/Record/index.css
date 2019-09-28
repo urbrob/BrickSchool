@@ -1,0 +1,64 @@
+.recordBox {
+  background-image: linear-gradient(#505050, #5a5a5a);
+  /* background-color: red; */
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 20vh;
+  margin-top: 0.4vh;
+}
+
+.recordInfo {
+  display: "flex";
+  flex-direction: "column";
+  flex-wrap: "nowrap";
+  align-items: "flex-start";
+  padding: 10px 0;
+  width: 50%;
+  /* background-color: aquamarine; */
+}
+.ranking {
+  color: #bdbdbd;
+}
+.schoolName {
+  color: #ffae3c;
+  font-size: 30px;
+}
+.location {
+  color: white;
+  font-size: 20px;
+}
+.recordStatistics {
+  /* background-color: yellow;*/
+  width: 25vw;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.statisticsBox {
+  color: white;
+  padding: 0 15%;
+  text-align: center;
+}
+.wsk {
+  font-size: 30px;
+  padding: 15px 20px;
+  border-style: solid;
+  border-radius: 100%;
+  border-color: #ffae3c;
+  border-width: 2px;
+  height: 100%;
+}
+.badge {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
