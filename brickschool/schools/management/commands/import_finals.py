@@ -104,6 +104,7 @@ def perspective_high_school(bag_of_words):
                     school = school.filter(name__icontains=word)
                     if school.count() == 1:
                         school = school.get()
+                        break
                 except:
                     pass
         if isinstance(school, School):
