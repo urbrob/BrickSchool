@@ -4,6 +4,7 @@ import { badges } from "./badges";
 
 const Record = ({
   name,
+  schoolId,
   location,
   perspektywyBadge,
   schoolType,
@@ -23,7 +24,7 @@ const Record = ({
       }}
     />
     <div className="recordInfo">
-      <div className="ranking">#{ranking} w rankingu wojewódzkim</div>
+      <div className="ranking">#{schoolId} w rankingu wojewódzkim</div>
       <div className="schoolName">{name}</div>
       <div className="location">{location}</div>
     </div>
