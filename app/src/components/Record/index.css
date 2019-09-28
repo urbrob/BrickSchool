@@ -62,3 +62,8 @@
   justify-content: center;
   height: 100%;
 }
+img {
+  height: 60%;
+  width: 60%;
+  margin-bottom: 5px;
+}
