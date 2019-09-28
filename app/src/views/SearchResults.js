@@ -1,31 +1,50 @@
 import React from "react";
 import { Layout } from "antd";
-import background from "../images/bg1.jpg";
 import HeaderMenu from "../components/HeaderMenu";
 import FooterCredits from "../components/FooterCredits";
 import FiltersDrawer from "../components/FiltersDrawer";
+import Record from "../components/Record";
+import school_placeholder1 from "../images/school_placeholder1.jpg";
+import school_placeholder2 from "../images/school_placeholder2.jpg";
+import school_placeholder3 from "../images/school_placeholder3.jpg";
 
 const { Content } = Layout;
 
-const exampleRecord = {
-  name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
-  distance: 2,
-  perspektywyBadge: true,
-  schoolType: "Liceum ogólnokształcące"
-};
+const exampleRecords = [
+  {
+    name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
+    distance: 2,
+    perspektywyBadge: true,
+    schoolType: "Liceum ogólnokształcące",
+    thumbnail: school_placeholder1
+  },
+  {
+    name: "Technikum nr 2 na Ślunsku",
+    distance: 666,
+    perspektywyBadge: false,
+    schoolType: "Technikum",
+    thumbnail: school_placeholder2
+  },
+  {
+    name: "Liceum Ogólnozniekształcające nr 12 w Łodzi",
+    distance: 1,
+    perspektywyBadge: true,
+    schoolType: "Liceum ogólnokształcące",
+    thumbnail: school_placeholder3
+  }
+];
 
 const SearchResults = () => {
   return (
     <div>
       <Layout className="layout" style={{ height: "100vh" }}>
-        <HeaderMenu />
+      <HeaderMenu />
         <div
           title="filtersContainer"
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "flex-start",
-            backgroundImage: { ...background },
             backgroundColor: "#707070"
           }}
         >
@@ -55,12 +74,23 @@ const SearchResults = () => {
           title="searchResultsContainer"
           style={{
             display: "flex",
+            flexDirection: "column",
+            flexWrap: "nowrap",
             alignItems: "center",
             justifyContent: "center",
-            backgroundImage: { ...background }
+            height: "160px",
+            backgroundColor: "red"
           }}
         >
-          <h1>Search Results placeholder</h1>
+          {exampleRecords.map(record => (
+            <Record
+              name={record.name}
+              distance={record.distance}
+              perspektywyBadge={record.perspektywyBadge}
+              schoolType={record.schoolType}
+              thumbnail={record.thumbnail}
+            />
+          ))}
         </Content>
         <FooterCredits />
       </Layout>

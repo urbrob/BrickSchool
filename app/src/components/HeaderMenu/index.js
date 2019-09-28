@@ -1,37 +1,43 @@
 import React from "react";
-import { Layout, Menu } from "antd";
 import logo from "../../images/logo.png";
 
-const { Header } = Layout;
-
 const HeaderMenu = () => (
-  <Header
+  <div
     style={{
+      height: "5%",
       display: "flex",
-      justifyContent: "flex-end",
+      alignItems: "center",
       backgroundColor: "#505050"
     }}
   >
-    <div style={{ width: "20%" }}>
-      <img src={logo} height="50px" />
-    </div>
-    <Menu
-      theme="dark"
-      mode="horizontal"
+    <div
+      title="logo"
       style={{
-        width: "80%",
-        lineHeight: "64px",
-        justifySelf: "flex-end",
-        textAlign: "right",
-        backgroundColor: "inherit",
-        selectColor: "red"
+        width: "20%",
+        height: "100%",
+        padding: "5px 30px"
       }}
     >
-      <Menu.Item>Menu item 1</Menu.Item>
-      <Menu.Item>Menu item 2</Menu.Item>
-      <Menu.Item>Menu item 3</Menu.Item>
-    </Menu>
-  </Header>
+      <img src={logo} style={{ height: "100%" }} />
+    </div>
+    <div
+      title="navMenu"
+      style={{
+        width: "80%",
+        display: "flex",
+        alignContent: "center",
+        justifyContent: "flex-end",
+        backgroundColor: "red"
+      }}
+    >
+      <span style={{ backgroundColor: "yellow", margin: "0 15px" }}>
+        Placeholder button
+      </span>
+      <span style={{ backgroundColor: "yellow", margin: "0 15px" }}>
+        Placeholder button
+      </span>
+    </div>
+  </div>
 );
 
 export default HeaderMenu;

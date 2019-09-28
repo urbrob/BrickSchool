@@ -7,12 +7,10 @@ const FiltersDrawer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const showDrawer = () => {
     setIsVisible(!isVisible);
-    console.log("dupa");
   };
 
   const onClose = () => {
     setIsVisible(false);
-    console.log("dupa");
   };
 
   return (
