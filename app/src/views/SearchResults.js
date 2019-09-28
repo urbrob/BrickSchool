@@ -1,61 +1,10 @@
 import React from "react";
-import { Layout } from "antd";
 import HeaderMenu from "../components/HeaderMenu";
 import FooterCredits from "../components/FooterCredits";
 import FiltersDrawer from "../components/FiltersDrawer";
-import Record from "../components/Record";
-import school_placeholder1 from "../images/school_placeholder1.jpg";
-import school_placeholder2 from "../images/school_placeholder2.jpg";
-import school_placeholder3 from "../images/school_placeholder3.jpg";
 import "./layout.css";
 import ContentWrapper from "../components/ContentWrapper";
-
-const { Content } = Layout;
-
-const exampleRecords = [
-  {
-    name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
-    distance: 2,
-    perspektywyBadge: true,
-    schoolType: "Liceum ogólnokształcące",
-    thumbnail: school_placeholder1
-  },
-  {
-    name: "Technikum nr 2 na Ślunsku",
-    distance: 666,
-    perspektywyBadge: false,
-    schoolType: "Technikum",
-    thumbnail: school_placeholder2
-  },
-  {
-    name: "Liceum Ogólnozniekształcające nr 12 w Łodzi",
-    distance: 1,
-    perspektywyBadge: true,
-    schoolType: "Liceum ogólnokształcące",
-    thumbnail: school_placeholder3
-  },
-  {
-    name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
-    distance: 2,
-    perspektywyBadge: true,
-    schoolType: "Liceum ogólnokształcące",
-    thumbnail: school_placeholder1
-  },
-  {
-    name: "Technikum nr 2 na Ślunsku",
-    distance: 666,
-    perspektywyBadge: false,
-    schoolType: "Technikum",
-    thumbnail: school_placeholder2
-  },
-  {
-    name: "Liceum Ogólnozniekształcające nr 12 w Łodzi",
-    distance: 1,
-    perspektywyBadge: true,
-    schoolType: "Liceum ogólnokształcące",
-    thumbnail: school_placeholder3
-  }
-];
+import RecordsList from "../components/Record/RecordsList";
 
 const SearchResults = () => {
   return (
@@ -107,15 +56,7 @@ const SearchResults = () => {
             backgroundImage: "linear-gradient(white,#ffdcab)"
           }}
         >
-          {exampleRecords.map(record => (
-            <Record
-              name={record.name}
-              distance={record.distance}
-              perspektywyBadge={record.perspektywyBadge}
-              schoolType={record.schoolType}
-              thumbnail={record.thumbnail}
-            />
-          ))}
+          <RecordsList />
         </div>
       </ContentWrapper>
       <FooterCredits />
