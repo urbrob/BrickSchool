@@ -33,13 +33,7 @@ const Record = ({
         <div className="wsk">{wsk}</div>
       </div>
       <div className="badge">
-        <img
-          src={badges.find(b => b.type === perspektywyBadge).icon}
-          height={120}
-          style={{
-            marginBottom: "15px"
-          }}
-        />
+        <img src={badges.find(b => b.type === perspektywyBadge).icon} />
       </div>
     </div>
   </div>
