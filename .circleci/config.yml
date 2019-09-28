@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  test_django:
     docker:
       - image: circleci/python:3.6.8-jessie
     steps:
@@ -8,4 +8,15 @@ jobs:
       - run: pip3 install -r brickschool/requirements.txt --user
       - run: python3 brickschool/manage.py migrate
       - run: python3 brickschool/manage.py test
-
+  test_go:
+    docker:
+      - image: circleci/golang:1.13
+    steps:
+      - checkout
+      - run: cd csvconcat && go test
+workflows:
+  version: 2
+  run_tests:
+    jobs:
+      - test_django
+      - test_go

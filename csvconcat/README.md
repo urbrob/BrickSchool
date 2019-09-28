@@ -1,0 +1,1 @@
+This is helper program created to add regon field to csv files that do not contain it
