@@ -4,7 +4,7 @@ const ContentWrapper = ({ children }) => {
   return (
     <div
       style={{
-        backgroundColor: "yellow",
+        backgroundColor: "limegreen",
         height: "100%",
         display: "flex",
         alignItems: "center",

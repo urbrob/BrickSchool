@@ -1,10 +1,12 @@
 import React from "react";
+import NavButton from "./NavButton";
 import logo from "../../images/logo.png";
+import "./index.css";
 
 const HeaderMenu = () => (
   <div
     style={{
-      height: "5%",
+      height: "50px",
       display: "flex",
       alignItems: "center",
       backgroundColor: "#505050"
@@ -26,16 +28,13 @@ const HeaderMenu = () => (
         width: "80%",
         display: "flex",
         alignContent: "center",
-        justifyContent: "flex-end",
-        backgroundColor: "red"
+        justifyContent: "flex-end"
       }}
     >
-      <span style={{ backgroundColor: "yellow", margin: "0 15px" }}>
-        Placeholder button
-      </span>
-      <span style={{ backgroundColor: "yellow", margin: "0 15px" }}>
-        Placeholder button
-      </span>
+      <div className="NavButtonsWrapper">
+        <NavButton redirect="/">Home</NavButton>
+        <NavButton redirect="/records">Records</NavButton>
+      </div>
     </div>
   </div>
 );
