@@ -1,0 +1,1542 @@
+{
+    "mlp_2016":{
+        "okres":3,
+        "nazwa":"język polski",
+        "kolejnosc":26,
+        "do_prezentacji":true,
+        "kolor":60,
+        "skrot":"język polski",
+        "os_y":"pol.",
+        "egz_dop":"maturalnego",
+        "opis":"Przeliczenie 2016: 3-letnie śr. wyniki i EWD LO w zakresie j. polskiego - bez trendu, modelem mieszanych efektów, matura skalowana wielogrupowo.",
+        "grupa":"przedmioty humanistyczne",
+        "rodzaj_wsk":"ewd",
+        "wskaznik":"mlp_2016",
+        "szkoly":[
+            {
+                "idSzkoly":23206,
+                "nazwa":"III Liceum Ogólnokształcące im. T. Kościuszki w Łodzi",
+                "adres":"Sienkiewicza 46, 90-009 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":476,
+                            "j. polski łącznie":476,
+                            "j. polski rozszerzona":114
+                        },
+                        "ewd":{
+                            "min":-2.357766076873184,
+                            "pkt":"-1.08893",
+                            "max":0.1799060768731839
+                        },
+                        "egz":{
+                            "min":103.7268897836295,
+                            "pkt":"105.15",
+                            "max":106.5731102163705
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23220,
+                "nazwa":"II Liceum Ogólnokształcące im. Gabriela Narutowicza w Łodzi",
+                "adres":"Nowa 11/13, 90-031 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(217, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":247,
+                            "j. polski łącznie":247,
+                            "j. polski rozszerzona":75
+                        },
+                        "ewd":{
+                            "min":-0.5262200664204011,
+                            "pkt":"1.22258",
+                            "max":2.971380066420401
+                        },
+                        "egz":{
+                            "min":97.75145046727856,
+                            "pkt":"99.7489",
+                            "max":101.7463495327215
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23215,
+                "nazwa":"IV Liceum Ogólnokształcące im. Emilii Sczanieckiej w Łodzi",
+                "adres":"Pomorska16, 91-416 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"Część uczniów tej szkoły zdawała Maturę Międzynarodową (IB), nie mamy dostępu do ich wyników. W związku z tym wyznaczenie pozycji szkoły na wykresie może być mniej precyzyjne.",
+                        "kolor":"background-color: rgb(179, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":281,
+                            "j. polski łącznie":281,
+                            "j. polski rozszerzona":109
+                        },
+                        "ewd":{
+                            "min":-4.450100928753717,
+                            "pkt":"-2.80756",
+                            "max":-1.165019071246284
+                        },
+                        "egz":{
+                            "min":95.26233531457808,
+                            "pkt":"97.16",
+                            "max":99.05766468542191
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23161,
+                "nazwa":"IX Liceum Ogólnokształcące im. Jarosława Dąbrowskiego w Łodzi",
+                "adres":"Paderewskiego 24, 93-025 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(140, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":255,
+                            "j. polski łącznie":255,
+                            "j. polski rozszerzona":99
+                        },
+                        "ewd":{
+                            "min":-6.289650731434664,
+                            "pkt":"-4.5677",
+                            "max":-2.845749268565337
+                        },
+                        "egz":{
+                            "min":89.52815263542796,
+                            "pkt":"91.4983",
+                            "max":93.46844736457204
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23187,
+                "nazwa":"I Liceum Ogólnokształcące im. M. Kopernika w Łodzi",
+                "adres":"Więckowskiego 41, 90-734 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(102, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":457,
+                            "j. polski łącznie":457,
+                            "j. polski rozszerzona":60
+                        },
+                        "ewd":{
+                            "min":-0.1302827321143485,
+                            "pkt":"1.16424",
+                            "max":2.458762732114348
+                        },
+                        "egz":{
+                            "min":108.5662782120182,
+                            "pkt":"109.981",
+                            "max":111.3957217879818
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23136,
+                "nazwa":"Katolickie Liceum Ogólnokształcące im. O. Anastazego Pankiewicza OO. Bernardynów",
+                "adres":"Bł. Anastazego Pankiewicza 15, 91-738 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(64, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":61,
+                            "j. polski łącznie":61,
+                            "j. polski rozszerzona":9
+                        },
+                        "ewd":{
+                            "min":-5.417054404076428,
+                            "pkt":"-2.04707",
+                            "max":1.322914404076427
+                        },
+                        "egz":{
+                            "min":93.18470716659745,
+                            "pkt":"97.3565",
+                            "max":101.5282928334025
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23169,
+                "nazwa":"Katolickie Liceum Ogólnokształcące Stowarzyszenia Przyjaciół Szkół Katolickich im. Błogosławionej Matki Teresy z Kalkuty",
+                "adres":"Nałkowskiej 2, 93-262 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(26, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":40,
+                            "j. polski łącznie":40,
+                            "j. polski rozszerzona":19
+                        },
+                        "ewd":{
+                            "min":-6.294316853393537,
+                            "pkt":"-2.24802",
+                            "max":1.798276853393537
+                        },
+                        "egz":{
+                            "min":89.54707827423404,
+                            "pkt":"94.3909",
+                            "max":99.23472172576597
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":78080,
+                "nazwa":"Liceum Ogólnokształcące GKJ",
+                "adres":"Al. Piłsudskiego 135, 92-318 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 13);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":95,
+                            "j. polski łącznie":95,
+                            "j. polski rozszerzona":17
+                        },
+                        "ewd":{
+                            "min":-10.66501726501925,
+                            "pkt":"-7.90976",
+                            "max":-5.154502734980754
+                        },
+                        "egz":{
+                            "min":78.8772223100943,
+                            "pkt":"82.374",
+                            "max":85.8707776899057
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23159,
+                "nazwa":"Liceum Ogólnokształcące im. Joachima Lelewela",
+                "adres":"Podmiejska 21, 93-165 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 51);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":163,
+                            "j. polski łącznie":163,
+                            "j. polski rozszerzona":133
+                        },
+                        "ewd":{
+                            "min":0.2850062085617258,
+                            "pkt":"2.4215",
+                            "max":4.557993791438275
+                        },
+                        "egz":{
+                            "min":97.6287019532578,
+                            "pkt":"100.149",
+                            "max":102.6692980467422
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23177,
+                "nazwa":"Liceum Ogólnokształcące Jolanty i Jana Misiaków",
+                "adres":"Wyszyńskiego 44, 94-047 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla analizowanego okresu dla tej szkoły dysponujemy mniej niż 30 wynikami.",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":{
+                            "ogółem":29,
+                            "j. polski łącznie":29,
+                            "j. polski rozszerzona":9
+                        },
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23153,
+                "nazwa":"Liceum Ogólnokształcące MIKRON w Łodzi",
+                "adres":"Piękna 30/32, 93-558 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla analizowanego okresu dla tej szkoły dysponujemy mniej niż 30 wynikami.",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":{
+                            "ogółem":16,
+                            "j. polski łącznie":16,
+                            "j. polski rozszerzona":2
+                        },
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23205,
+                "nazwa":"Liceum Ogólnokształcące nr 8",
+                "adres":"Pomorska 105, 90-225 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 89);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":318,
+                            "j. polski łącznie":318,
+                            "j. polski rozszerzona":105
+                        },
+                        "ewd":{
+                            "min":-2.661263642257251,
+                            "pkt":"-1.11488",
+                            "max":0.4315036422572511
+                        },
+                        "egz":{
+                            "min":99.42360098238117,
+                            "pkt":"101.168",
+                            "max":102.9123990176188
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23188,
+                "nazwa":"Liceum Ogólnokształcące nr XXI im. Bolesława Prusa",
+                "adres":"Kopernika 2, 90-509 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 128);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":436,
+                            "j. polski łącznie":436,
+                            "j. polski rozszerzona":213
+                        },
+                        "ewd":{
+                            "min":-2.037248599144024,
+                            "pkt":"-0.712435",
+                            "max":0.6123785991440235
+                        },
+                        "egz":{
+                            "min":106.307427192643,
+                            "pkt":"107.757",
+                            "max":109.206572807357
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23200,
+                "nazwa":"Liceum Ogólnokształcące Umiejętności Twórczych w Łodzi",
+                "adres":"Rewolucji 1905 r. 52, 90-213 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla analizowanego okresu dla tej szkoły dysponujemy mniej niż 30 wynikami.",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":{
+                            "ogółem":24,
+                            "j. polski łącznie":24,
+                            "j. polski rozszerzona":6
+                        },
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23197,
+                "nazwa":"LV Liceum Ogólnokształcące w Zespole Szkół Ponadgimnazjalnych nr 10 im. Jana Szczepanika w Łodzi",
+                "adres":"Strykowska 10/18, 91-725 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla analizowanego okresu dla tej szkoły dysponujemy mniej niż 30 wynikami.",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":{
+                            "ogółem":17,
+                            "j. polski łącznie":17,
+                            "j. polski rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":77378,
+                "nazwa":"Mundurowe Liceum Ogólnokształcące w Łodzi",
+                "adres":"Klaretyńska 9, 91-117 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 166);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":156,
+                            "j. polski łącznie":156,
+                            "j. polski rozszerzona":27
+                        },
+                        "ewd":{
+                            "min":-5.599687943856578,
+                            "pkt":"-3.41795",
+                            "max":-1.236212056143421
+                        },
+                        "egz":{
+                            "min":85.04064294336052,
+                            "pkt":"87.6788",
+                            "max":90.31695705663947
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23163,
+                "nazwa":"Ogólnokształcąca Szkoła Muzyczna I i II Stopnia im. H. Wieniawskiego w Łodzi",
+                "adres":"Sosnowa 9, 93-102 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 204);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":90,
+                            "j. polski łącznie":90,
+                            "j. polski rozszerzona":44
+                        },
+                        "ewd":{
+                            "min":-0.1286135722253436,
+                            "pkt":"2.69638",
+                            "max":5.521373572225343
+                        },
+                        "egz":{
+                            "min":99.77432244371052,
+                            "pkt":"103.243",
+                            "max":106.7116775562895
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23196,
+                "nazwa":"Ogólnokształcąca Szkoła Sztuk Pięknych w Zespole Państwowych Szkół Plastycznych im. T. Makowskiego w Łodzi",
+                "adres":"Gandhiego 14, 91-012 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 242);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":41,
+                            "j. polski łącznie":41,
+                            "j. polski rozszerzona":20
+                        },
+                        "ewd":{
+                            "min":-7.497865905120588,
+                            "pkt":"-3.49345",
+                            "max":0.5109659051205879
+                        },
+                        "egz":{
+                            "min":86.85096107204765,
+                            "pkt":"91.612",
+                            "max":96.37303892795234
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23183,
+                "nazwa":"Publiczne Liceum Ogólnokształcące Politechniki Łódzkiej",
+                "adres":"Różyckiego 5, 93-586 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 230, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":220,
+                            "j. polski łącznie":220,
+                            "j. polski rozszerzona":13
+                        },
+                        "ewd":{
+                            "min":0.7371152119023798,
+                            "pkt":"2.58676",
+                            "max":4.436404788097621
+                        },
+                        "egz":{
+                            "min":108.746834073979,
+                            "pkt":"110.779",
+                            "max":112.811165926021
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":31326,
+                "nazwa":"Publiczne Liceum Ogólnokształcące UŁ",
+                "adres":"Pomorska 161, 90-236 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 191, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":295,
+                            "j. polski łącznie":295,
+                            "j. polski rozszerzona":110
+                        },
+                        "ewd":{
+                            "min":1.056133173956279,
+                            "pkt":"2.66022",
+                            "max":4.26430682604372
+                        },
+                        "egz":{
+                            "min":107.9525435557503,
+                            "pkt":"109.698",
+                            "max":111.4434564442497
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23218,
+                "nazwa":"Salezjańskie Liceum Ogólnokształcące im. Księdza Bosko w Zespole Szkół Salezjańskich w Łodzi",
+                "adres":"Wodna 34, 90-046 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 153, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":191,
+                            "j. polski łącznie":191,
+                            "j. polski rozszerzona":56
+                        },
+                        "ewd":{
+                            "min":-2.775150380653892,
+                            "pkt":"-0.795026",
+                            "max":1.185098380653892
+                        },
+                        "egz":{
+                            "min":100.1000017402762,
+                            "pkt":"102.35",
+                            "max":104.5999982597238
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23175,
+                "nazwa":"Społeczne Liceum Ogólnokształcące",
+                "adres":"Rajdowa 13, 94-003 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 115, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":54,
+                            "j. polski łącznie":54,
+                            "j. polski rozszerzona":25
+                        },
+                        "ewd":{
+                            "min":-4.971923757637692,
+                            "pkt":"-1.41547",
+                            "max":2.140983757637692
+                        },
+                        "egz":{
+                            "min":86.57971060956636,
+                            "pkt":"91.2365",
+                            "max":95.89328939043365
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23166,
+                "nazwa":"Szkoła Mistrzostwa Sportowego im. Kazimierza Górskiego Liceum Ogólnokształcące",
+                "adres":"Milionowa 12, 93-193 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 77, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":122,
+                            "j. polski łącznie":122,
+                            "j. polski rozszerzona":6
+                        },
+                        "ewd":{
+                            "min":-8.341689495990224,
+                            "pkt":"-5.89032",
+                            "max":-3.438950504009776
+                        },
+                        "egz":{
+                            "min":80.5686798068869,
+                            "pkt":"83.588",
+                            "max":86.60732019311308
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":76617,
+                "nazwa":"Szkoła Mistrzostwa Sportowego Liceum Ogólnokształcące Marcina Gortata w Łodzi",
+                "adres":"Kadłubka 33, 93-248 Łódż",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 38, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":101,
+                            "j. polski łącznie":101,
+                            "j. polski rozszerzona":8
+                        },
+                        "ewd":{
+                            "min":-9.919270852511268,
+                            "pkt":"-7.24124",
+                            "max":-4.563209147488733
+                        },
+                        "egz":{
+                            "min":80.47747364347647,
+                            "pkt":"83.5656",
+                            "max":86.65372635652353
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23134,
+                "nazwa":"XIII Liceum Ogólnokształcące",
+                "adres":"Zuli Pacanowskiej 4, 91-430 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":433,
+                            "j. polski łącznie":433,
+                            "j. polski rozszerzona":129
+                        },
+                        "ewd":{
+                            "min":-1.890846453312476,
+                            "pkt":"-0.561529",
+                            "max":0.7677884533124761
+                        },
+                        "egz":{
+                            "min":101.1020864496446,
+                            "pkt":"102.598",
+                            "max":104.0939135503554
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23192,
+                "nazwa":"XII Liceum Ogólnokształcące im. Stanisława Wyspiańskiego w Łodzi",
+                "adres":"Anstadta 7, 91-409 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(38, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":405,
+                            "j. polski łącznie":405,
+                            "j. polski rozszerzona":52
+                        },
+                        "ewd":{
+                            "min":0.3636822398877728,
+                            "pkt":"1.73737",
+                            "max":3.111057760112227
+                        },
+                        "egz":{
+                            "min":105.3883030129839,
+                            "pkt":"106.909",
+                            "max":108.4296969870161
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23164,
+                "nazwa":"XLIII Liceum Ogólnokształcące w Zespole Szkół Ogólnokształcących nr 5 im. Juliana Tuwima w Łodzi",
+                "adres":"Królewska 13/15, 93-319 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(77, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":66,
+                            "j. polski łącznie":65,
+                            "j. polski rozszerzona":17
+                        },
+                        "ewd":{
+                            "min":-11.26742269999941,
+                            "pkt":"-8.014",
+                            "max":-4.760577300000593
+                        },
+                        "egz":{
+                            "min":78.66635082384903,
+                            "pkt":"82.5966",
+                            "max":86.52684917615096
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23135,
+                "nazwa":"XLII Liceum Ogólnokształcące w Zespole Szkół Ogólnokształcących nr 4 im. Ireny Sendlerowej",
+                "adres":"Stawowa 28, 91-358 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(115, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":79,
+                            "j. polski łącznie":79,
+                            "j. polski rozszerzona":6
+                        },
+                        "ewd":{
+                            "min":-11.51238628175998,
+                            "pkt":"-8.51326",
+                            "max":-5.514133718240024
+                        },
+                        "egz":{
+                            "min":79.14120783429401,
+                            "pkt":"82.7146",
+                            "max":86.287992165706
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23217,
+                "nazwa":"XLIV Liceum Ogólnokształcące w Łodzi",
+                "adres":"Wacława 22/24, 93-118 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla tej szkoły brakuje ponad 10% danych. Może to być wynikiem problemów z połączeniem wyników matury i egzaminu gimnazjalnego. W związku z tym wyznaczenie pozycji szkoły na wykresie może być mniej precyzyjne.",
+                        "kolor":"background-color: rgb(153, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":115,
+                            "j. polski łącznie":115,
+                            "j. polski rozszerzona":52
+                        },
+                        "ewd":{
+                            "min":-7.56093043408373,
+                            "pkt":"-5.04051",
+                            "max":-2.520089565916271
+                        },
+                        "egz":{
+                            "min":82.09261901703705,
+                            "pkt":"85.3843",
+                            "max":88.67598098296294
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23225,
+                "nazwa":"XLVII Liceum Ogólnokształcące w Zespole Szkół Ogólnokształcących nr 8 im. Stanisława Staszica",
+                "adres":"Czernika 1/3, 92-538 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(191, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":128,
+                            "j. polski łącznie":128,
+                            "j. polski rozszerzona":44
+                        },
+                        "ewd":{
+                            "min":-9.250305698527344,
+                            "pkt":"-6.8538",
+                            "max":-4.457294301472656
+                        },
+                        "egz":{
+                            "min":83.40340246146087,
+                            "pkt":"86.3664",
+                            "max":89.32939753853913
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23178,
+                "nazwa":"XVIII Liceum Ogólnokształcące im. Jędrzeja Śniadeckiego",
+                "adres":"Perla 11, 94-203 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(230, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":217,
+                            "j. polski łącznie":217,
+                            "j. polski rozszerzona":43
+                        },
+                        "ewd":{
+                            "min":-3.310909402402775,
+                            "pkt":"-1.44895",
+                            "max":0.4130094024027753
+                        },
+                        "egz":{
+                            "min":90.93462766154792,
+                            "pkt":"93.1356",
+                            "max":95.33657233845207
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23126,
+                "nazwa":"XV Liceum Ogólnokształcące im. Jana Kasprowicza w Łodzi",
+                "adres":"Traktorowa 77, 91-204 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 242);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":261,
+                            "j. polski łącznie":261,
+                            "j. polski rozszerzona":79
+                        },
+                        "ewd":{
+                            "min":-5.771226188231793,
+                            "pkt":"-4.06862",
+                            "max":-2.366013811768207
+                        },
+                        "egz":{
+                            "min":90.30703281775584,
+                            "pkt":"92.3286",
+                            "max":94.35016718224415
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23223,
+                "nazwa":"XXIII Liceum Ogólnokształcące im. ks. prof. Józefa Tischnera w Łodzi",
+                "adres":"Al. Marszałka J. Piłsudskiego 159, 92-301 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 204);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":102,
+                            "j. polski łącznie":102,
+                            "j. polski rozszerzona":25
+                        },
+                        "ewd":{
+                            "min":-3.335720640889556,
+                            "pkt":"-0.669953",
+                            "max":1.995814640889556
+                        },
+                        "egz":{
+                            "min":89.95805180689523,
+                            "pkt":"93.2419",
+                            "max":96.52574819310477
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23125,
+                "nazwa":"XXIV Liceum Ogólnokształcące im. Marii Skłodowskiej-Curie w Łodzi",
+                "adres":"Marysińska 61/67, 91-850 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 166);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":355,
+                            "j. polski łącznie":355,
+                            "j. polski rozszerzona":85
+                        },
+                        "ewd":{
+                            "min":-6.885903431174394,
+                            "pkt":"-5.42055",
+                            "max":-3.955196568825607
+                        },
+                        "egz":{
+                            "min":90.17070349156839,
+                            "pkt":"91.8747",
+                            "max":93.57869650843162
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23203,
+                "nazwa":"XXIX Liceum Ogólnokształcące im. hm. Janka Bytnara ,, Rudego”",
+                "adres":"Zelwerowicza 38/44, 90-147 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 128);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":293,
+                            "j. polski łącznie":293,
+                            "j. polski rozszerzona":99
+                        },
+                        "ewd":{
+                            "min":-3.122535570894112,
+                            "pkt":"-1.51312",
+                            "max":0.09629557089411267
+                        },
+                        "egz":{
+                            "min":97.68822779966824,
+                            "pkt":"99.4956",
+                            "max":101.3029722003318
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23179,
+                "nazwa":"XXVI Liceum Ogólnokształcące w Łodzi",
+                "adres":"Wileńska 22A, 94-029 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 89);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":495,
+                            "j. polski łącznie":495,
+                            "j. polski rozszerzona":94
+                        },
+                        "ewd":{
+                            "min":-3.303248069730428,
+                            "pkt":"-2.05863",
+                            "max":-0.8140119302695719
+                        },
+                        "egz":{
+                            "min":100.9915093789273,
+                            "pkt":"102.366",
+                            "max":103.7404906210727
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23160,
+                "nazwa":"XXV Liceum Ogólnokształcące",
+                "adres":"Podhalańska 2A, 93-224 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 51);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":497,
+                            "j. polski łącznie":497,
+                            "j. polski rozszerzona":155
+                        },
+                        "ewd":{
+                            "min":-2.954688293178271,
+                            "pkt":"-1.71254",
+                            "max":-0.4703917068217289
+                        },
+                        "egz":{
+                            "min":98.17711129479702,
+                            "pkt":"99.5627",
+                            "max":100.948288705203
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23176,
+                "nazwa":"XXXIII Liceum Ogólnokształcące im. Armii Krajowej",
+                "adres":"Kusocińskiego 116, 94-054 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 13);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":377,
+                            "j. polski łącznie":377,
+                            "j. polski rozszerzona":120
+                        },
+                        "ewd":{
+                            "min":-3.293228934497653,
+                            "pkt":"-1.87041",
+                            "max":-0.447591065502347
+                        },
+                        "egz":{
+                            "min":95.39855488936318,
+                            "pkt":"97.0101",
+                            "max":98.6216451106368
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23224,
+                "nazwa":"XXXII Liceum Ogólnokształcące im. Haliny Poświatowskiej w Zespole Szkół Ogólnokształcących nr 1 w Łodzi",
+                "adres":"Czajkowskiego 14, 92-511 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 26, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":378,
+                            "j. polski łącznie":378,
+                            "j. polski rozszerzona":51
+                        },
+                        "ewd":{
+                            "min":0.3670666666126807,
+                            "pkt":"1.78804",
+                            "max":3.209013333387319
+                        },
+                        "egz":{
+                            "min":99.28483093792521,
+                            "pkt":"100.925",
+                            "max":102.5651690620748
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":78079,
+                "nazwa":"XXXIV Liceum Ogólnokształcące im. Krzysztofa Kieślowskiego w Zespole Szkół Ogólnokształcących nr 7 w Łodzi",
+                "adres":"Minerska 1/3, 94-304 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 64, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":127,
+                            "j. polski łącznie":127,
+                            "j. polski rozszerzona":50
+                        },
+                        "ewd":{
+                            "min":-7.909463467269545,
+                            "pkt":"-5.50407",
+                            "max":-3.098676532730454
+                        },
+                        "egz":{
+                            "min":84.70207844369388,
+                            "pkt":"87.6417",
+                            "max":90.58132155630612
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23151,
+                "nazwa":"XXXI Liceum Ogólnokształcące im. Ludwika Zamenhofa w Łodzi",
+                "adres":"Konspiracyjnego Wojska Polskiego 5B, 93-236 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 102, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":472,
+                            "j. polski łącznie":472,
+                            "j. polski rozszerzona":89
+                        },
+                        "ewd":{
+                            "min":-3.467065866786963,
+                            "pkt":"-2.19295",
+                            "max":-0.9188341332130376
+                        },
+                        "egz":{
+                            "min":101.8116013145999,
+                            "pkt":"103.226",
+                            "max":104.6403986854001
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23124,
+                "nazwa":"XXX Liceum Ogólnokształcące im. ks. bp. I. Krasickiego w Łodzi",
+                "adres":"Obornicka 11/13, 91-039 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 140, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":59,
+                            "j. polski łącznie":59,
+                            "j. polski rozszerzona":16
+                        },
+                        "ewd":{
+                            "min":-6.876516646510304,
+                            "pkt":"-3.45628",
+                            "max":-0.03604335348969556
+                        },
+                        "egz":{
+                            "min":84.00508896506946,
+                            "pkt":"88.4325",
+                            "max":92.85991103493055
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23156,
+                "nazwa":"XX Liceum Ogólnokształcące im. Juliusza Słowackiego",
+                "adres":"Obywatelska57, 93-558 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 179, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":252,
+                            "j. polski łącznie":252,
+                            "j. polski rozszerzona":88
+                        },
+                        "ewd":{
+                            "min":-6.610403897086243,
+                            "pkt":"-4.87853",
+                            "max":-3.146656102913756
+                        },
+                        "egz":{
+                            "min":87.31353298779565,
+                            "pkt":"89.3946",
+                            "max":91.47566701220434
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23127,
+                "nazwa":"Zespół Szkół Katolickich im. Jana Pawła II w Łodzi",
+                "adres":"Baczyńskiego 156, 91-170 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 217, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":57,
+                            "j. polski łącznie":57,
+                            "j. polski rozszerzona":17
+                        },
+                        "ewd":{
+                            "min":-1.309068725901635,
+                            "pkt":"2.16377",
+                            "max":5.636608725901635
+                        },
+                        "egz":{
+                            "min":98.1659780491743,
+                            "pkt":"102.361",
+                            "max":106.5560219508257
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":78078,
+                "nazwa":"Liceum Ogólnokształcące Lokos",
+                "adres":"Rojna 33, 91-134 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla tej szkoły brak wyników z najnowszego rocznika.",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":{
+                            "ogółem":17,
+                            "j. polski łącznie":17,
+                            "j. polski rozszerzona":2
+                        },
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23165,
+                "nazwa":"Prywatne Liceum Ogólnokształcące",
+                "adres":"Rzgowska 17 A, 93-008 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla tej szkoły brak wyników z najnowszego rocznika.",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":{
+                            "ogółem":31,
+                            "j. polski łącznie":31,
+                            "j. polski rozszerzona":6
+                        },
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23167,
+                "nazwa":"Niepubliczne Liceum Ogólnokształcące Polskiego Związku Piłki Siatkowej",
+                "adres":"Milionowa 12, 93-193 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla tej szkoły brak wyników z najnowszego rocznika.",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":{
+                            "ogółem":10,
+                            "j. polski łącznie":10,
+                            "j. polski rozszerzona":1
+                        },
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23158,
+                "nazwa":"Liceum Ogólnokształcące Związku Nauczycielstwa Polskiego w Zespole Szkół ZNP w Łodzi",
+                "adres":"Scaleniowa 6, 93-436 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23130,
+                "nazwa":"XXXV Liceum Ogólnokształcące im. Króla Stefana Batorego w Łodzi",
+                "adres":"Staszica 1/3, 91-746 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23155,
+                "nazwa":"LI Liceum Ogólnokształcące w Zespole Szkół Ponadgimnazjalnych nr 22 w Łodzi",
+                "adres":"Przybyszewskiego 73/75, 93-126 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23184,
+                "nazwa":"XLVI Licem Ogólnokształcące",
+                "adres":"Żeromskiego 115, 90-542 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23174,
+                "nazwa":"XLV Liceum Ogólnokształcące w Zespole Szkół Ogólnokształcących nr 7 w Łodzi",
+                "adres":"Minerska 1/3, 94-304 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23186,
+                "nazwa":"XXXIV Liceum Ogólnokształcące im. Krzysztofa Kieślowskiego w Łodzi",
+                "adres":"Żeromskiego 26, 90-737 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23143,
+                "nazwa":"XLI Liceum Ogólnokształcące",
+                "adres":"Łódź Pojezierska, 91-338 Bałuty",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            },
+            {
+                "idSzkoly":23133,
+                "nazwa":"XXVIII Liceum Ogólnokształcące im. Władysława Broniewskiego w Łodzi",
+                "adres":"T. Mostowskiego 23/27, 91-705 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":false,
+                        "komunikat":"Wskaźnik nie jest wyliczany dla tego okresu",
+                        "kolor":"background-color: rgb(255, 255, 255);",
+                        "lu":[
+
+                        ],
+                        "ewd":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "egz":{
+                            "min":"",
+                            "pkt":"",
+                            "max":""
+                        },
+                        "teryt":""
+                    }
+                }
+            }
+        ]
+    }
+}

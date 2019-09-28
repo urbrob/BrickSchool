@@ -13,6 +13,7 @@ import SearchResults from "./views/SearchResults";
 import SchoolDetails from "./components/SchoolDetails/SchoolDetails";
 
 
+
 export const client = new ApolloClient({
   uri: "http://localhost:8000/graphql"
 });

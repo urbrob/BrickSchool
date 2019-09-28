@@ -1,0 +1,816 @@
+{
+    "mtmp_2016":{
+        "okres":3,
+        "nazwa":"przedmioty matematyczno-przyrodnicze",
+        "kolejnosc":27,
+        "do_prezentacji":true,
+        "kolor":120,
+        "skrot":"mat.-przyr.",
+        "os_y":"mat.-przyr.",
+        "egz_dop":"maturalnego",
+        "opis":"Przeliczenie 2016: 3-letnie śr. wyniki i EWD T w zakresie przedm. mat.-przyr. - bez trendu, modelem mieszanych efektów, matura skalowana wielogrupowo.",
+        "grupa":"przedmioty matematyczno-przyrodnicze",
+        "rodzaj_wsk":"ewd",
+        "wskaznik":"mtmp_2016",
+        "szkoly":[
+            {
+                "idSzkoly":78879,
+                "nazwa":"Akademia-Technikum dla Młodzieży w Łodzi",
+                "adres":"Kilińskiego 21, 90-205 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"W połączonej bazie wyników matury i egzaminu gimnazjalnego dla tej szkoły dysponujemy wynikami tylko dla 2 lat. W związku z tym wyznaczenie pozycji szkoły na wykresie może być mniej precyzyjne.",
+                        "kolor":"background-color: rgb(0, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":57,
+                            "matematyka łącznie":57,
+                            "matematyka rozszerzona":0,
+                            "biologia łącznie":17,
+                            "biologia rozszerzona":17,
+                            "chemia łącznie":8,
+                            "chemia rozszerzona":8,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":4,
+                            "geografia rozszerzona":4,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-8.403095389559693,
+                            "pkt":"-5.3791",
+                            "max":-2.355104610440307
+                        },
+                        "egz":{
+                            "min":83.60401169402245,
+                            "pkt":"87.4282",
+                            "max":91.25238830597756
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":23139,
+                "nazwa":"Liceum Plastyczne w Zespole Państwowych Szkół Plastycznych im. T. Makowskiego w Łodzi",
+                "adres":"Gandhiego 14, 91-012 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 73);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":124,
+                            "matematyka łącznie":124,
+                            "matematyka rozszerzona":19,
+                            "biologia łącznie":2,
+                            "biologia rozszerzona":2,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":10,
+                            "geografia rozszerzona":10,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-4.937207724223821,
+                            "pkt":"-2.84013",
+                            "max":-0.7430522757761788
+                        },
+                        "egz":{
+                            "min":96.26940085768175,
+                            "pkt":"99.1117",
+                            "max":101.9539991423183
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26889,
+                "nazwa":"Technikum nr 10 w Zespole Szkół Ponadgimnazjalnych nr 10 im. Jana Szczepanika w Łodzi",
+                "adres":"Strykowska 10/18, 91-725 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 146);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":354,
+                            "matematyka łącznie":354,
+                            "matematyka rozszerzona":314,
+                            "biologia łącznie":0,
+                            "biologia rozszerzona":0,
+                            "chemia łącznie":3,
+                            "chemia rozszerzona":3,
+                            "fizyka łącznie":134,
+                            "fizyka rozszerzona":134,
+                            "geografia łącznie":4,
+                            "geografia rozszerzona":4,
+                            "informatyka łącznie":51,
+                            "informatyka rozszerzona":51
+                        },
+                        "ewd":{
+                            "min":8.012897706192986,
+                            "pkt":"9.2702",
+                            "max":10.52750229380702
+                        },
+                        "egz":{
+                            "min":117.324038398871,
+                            "pkt":"119.086",
+                            "max":120.847961601129
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26894,
+                "nazwa":"Technikum nr 12 w Zespole Szkół Przemysłu Mody w Łodzi",
+                "adres":"Naruszewicza 35, 93-161 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 255, 219);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":107,
+                            "matematyka łącznie":107,
+                            "matematyka rozszerzona":2,
+                            "biologia łącznie":25,
+                            "biologia rozszerzona":25,
+                            "chemia łącznie":1,
+                            "chemia rozszerzona":1,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":47,
+                            "geografia rozszerzona":47,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-6.092084734305048,
+                            "pkt":"-3.84157",
+                            "max":-1.591055265694952
+                        },
+                        "egz":{
+                            "min":88.49068343638015,
+                            "pkt":"91.3146",
+                            "max":94.13851656361985
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26888,
+                "nazwa":"Technikum nr 13 w Zespole Szkół Geodezyjno-Technicznych im. Sybiraków",
+                "adres":"Skrzydlata 15, 91-503 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 219, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":253,
+                            "matematyka łącznie":253,
+                            "matematyka rozszerzona":165,
+                            "biologia łącznie":8,
+                            "biologia rozszerzona":8,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":46,
+                            "fizyka rozszerzona":46,
+                            "geografia łącznie":114,
+                            "geografia rozszerzona":114,
+                            "informatyka łącznie":4,
+                            "informatyka rozszerzona":4
+                        },
+                        "ewd":{
+                            "min":4.018094672758799,
+                            "pkt":"5.50116",
+                            "max":6.9842253272412
+                        },
+                        "egz":{
+                            "min":105.5607605586628,
+                            "pkt":"107.528",
+                            "max":109.4952394413372
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26897,
+                "nazwa":"Technikum nr 15 w Zespole Szkół Ponadgimnazjalnych nr 15 im. dra Stefana Kopcińskiego w Łodzi",
+                "adres":"Kopcińskiego 5/11, 90-242 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 146, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":80,
+                            "matematyka łącznie":79,
+                            "matematyka rozszerzona":24,
+                            "biologia łącznie":20,
+                            "biologia rozszerzona":20,
+                            "chemia łącznie":1,
+                            "chemia rozszerzona":1,
+                            "fizyka łącznie":9,
+                            "fizyka rozszerzona":9,
+                            "geografia łącznie":26,
+                            "geografia rozszerzona":26,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-2.219689752949159,
+                            "pkt":"0.363393",
+                            "max":2.946475752949159
+                        },
+                        "egz":{
+                            "min":95.70515038523406,
+                            "pkt":"99.3063",
+                            "max":102.9074496147659
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26891,
+                "nazwa":"Technikum nr 17 w Zespole Szkół Techniczno-Informatycznych im. Jana Nowaka-Jeziorańskiego w Łodzi",
+                "adres":"Al. Politechniki 37, 93-502 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 73, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":151,
+                            "matematyka łącznie":151,
+                            "matematyka rozszerzona":100,
+                            "biologia łącznie":0,
+                            "biologia rozszerzona":0,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":32,
+                            "fizyka rozszerzona":32,
+                            "geografia łącznie":3,
+                            "geografia rozszerzona":3,
+                            "informatyka łącznie":4,
+                            "informatyka rozszerzona":4
+                        },
+                        "ewd":{
+                            "min":6.256883728014115,
+                            "pkt":"8.16396",
+                            "max":10.07103627198588
+                        },
+                        "egz":{
+                            "min":109.7237915988584,
+                            "pkt":"112.26",
+                            "max":114.7962084011416
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26904,
+                "nazwa":"Technikum nr 18 w Zespole Szkół Poligraficznych im. Mikołaja Reja w Łodzi",
+                "adres":"Edwarda 41, 92-229 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(0, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":68,
+                            "matematyka łącznie":68,
+                            "matematyka rozszerzona":2,
+                            "biologia łącznie":0,
+                            "biologia rozszerzona":0,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":3,
+                            "fizyka rozszerzona":3,
+                            "geografia łącznie":48,
+                            "geografia rozszerzona":48,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-10.0995124512864,
+                            "pkt":"-7.31241",
+                            "max":-4.525307548713595
+                        },
+                        "egz":{
+                            "min":83.99876748601056,
+                            "pkt":"87.8689",
+                            "max":91.73903251398943
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":31604,
+                "nazwa":"Technikum nr 19 w CKZiU w Łodzi",
+                "adres":"Stefana Żeromskiego 115, 90-542 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(73, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":393,
+                            "matematyka łącznie":393,
+                            "matematyka rozszerzona":82,
+                            "biologia łącznie":76,
+                            "biologia rozszerzona":76,
+                            "chemia łącznie":64,
+                            "chemia rozszerzona":64,
+                            "fizyka łącznie":29,
+                            "fizyka rozszerzona":29,
+                            "geografia łącznie":111,
+                            "geografia rozszerzona":111,
+                            "informatyka łącznie":34,
+                            "informatyka rozszerzona":34
+                        },
+                        "ewd":{
+                            "min":-3.311165948107144,
+                            "pkt":"-2.11704",
+                            "max":-0.9229140518928558
+                        },
+                        "egz":{
+                            "min":96.3925090434495,
+                            "pkt":"98.0354",
+                            "max":99.6782909565505
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26886,
+                "nazwa":"Technikum nr 1 w Zespole Szkół Ekonomiczno-Turystyczno-Hotelarskich w Łodzi",
+                "adres":"Drewnowska 171, 91-008 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(146, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":274,
+                            "matematyka łącznie":274,
+                            "matematyka rozszerzona":25,
+                            "biologia łącznie":8,
+                            "biologia rozszerzona":8,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":203,
+                            "geografia rozszerzona":203,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-5.332844795402517,
+                            "pkt":"-3.90667",
+                            "max":-2.480495204597484
+                        },
+                        "egz":{
+                            "min":91.422320808201,
+                            "pkt":"93.2693",
+                            "max":95.11627919179901
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26881,
+                "nazwa":"Technikum nr 21 w Zespole Szkół Rzemiosła im. Jana Kilińskiego w Łodzi",
+                "adres":"Żubardzka 2, 91-022 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(219, 0, 255);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":68,
+                            "matematyka łącznie":68,
+                            "matematyka rozszerzona":6,
+                            "biologia łącznie":14,
+                            "biologia rozszerzona":14,
+                            "chemia łącznie":8,
+                            "chemia rozszerzona":8,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":14,
+                            "geografia rozszerzona":14,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-1.942874451286405,
+                            "pkt":"0.844228",
+                            "max":3.631330451286405
+                        },
+                        "egz":{
+                            "min":93.78107781337911,
+                            "pkt":"97.2746",
+                            "max":100.7681221866209
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":31603,
+                "nazwa":"Technikum nr 22 im. gen. Stanisława Maczka w Zespole Szkół Samochodowych i Mechatronicznych w Łodzi",
+                "adres":"Przybyszewskiego 73/75, 93-126 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 219);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":68,
+                            "matematyka łącznie":68,
+                            "matematyka rozszerzona":23,
+                            "biologia łącznie":1,
+                            "biologia rozszerzona":1,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":10,
+                            "fizyka rozszerzona":10,
+                            "geografia łącznie":5,
+                            "geografia rozszerzona":5,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-6.630312451286405,
+                            "pkt":"-3.84321",
+                            "max":-1.056107548713595
+                        },
+                        "egz":{
+                            "min":90.5862509626407,
+                            "pkt":"94.2858",
+                            "max":97.98534903735928
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26893,
+                "nazwa":"Technikum nr 2 w Zespole Szkół Ekonomii i Usług im. Natalii Gąsiorowskiej",
+                "adres":"Astronautów 19, 93-533 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 146);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":205,
+                            "matematyka łącznie":205,
+                            "matematyka rozszerzona":24,
+                            "biologia łącznie":2,
+                            "biologia rozszerzona":2,
+                            "chemia łącznie":1,
+                            "chemia rozszerzona":1,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":153,
+                            "geografia rozszerzona":153,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-0.2121892796373634,
+                            "pkt":"1.4316",
+                            "max":3.075389279637363
+                        },
+                        "egz":{
+                            "min":97.44391921975911,
+                            "pkt":"99.6103",
+                            "max":101.7766807802409
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26898,
+                "nazwa":"Technikum nr 3 w Zespole Szkół Ponadgimnazjalnych nr 3",
+                "adres":"Kilińskiego 159/163, 90-315 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 73);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":230,
+                            "matematyka łącznie":230,
+                            "matematyka rozszerzona":101,
+                            "biologia łącznie":0,
+                            "biologia rozszerzona":0,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":9,
+                            "fizyka rozszerzona":9,
+                            "geografia łącznie":103,
+                            "geografia rozszerzona":103,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":3.767174849757422,
+                            "pkt":"5.3211",
+                            "max":6.875025150242579
+                        },
+                        "egz":{
+                            "min":104.5361490367983,
+                            "pkt":"106.534",
+                            "max":108.5318509632017
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26890,
+                "nazwa":"Technikum nr 5 w Zespole Szkół Ponadgimnazjalnych nr 5 im. Króla Bolesława Chrobrego w Łodzi",
+                "adres":"Drewnowska 88, 91-008 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 0, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":150,
+                            "matematyka łącznie":150,
+                            "matematyka rozszerzona":25,
+                            "biologia łącznie":2,
+                            "biologia rozszerzona":2,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":2,
+                            "fizyka rozszerzona":2,
+                            "geografia łącznie":24,
+                            "geografia rozszerzona":24,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":1.191204778962769,
+                            "pkt":"3.10442",
+                            "max":5.017635221037231
+                        },
+                        "egz":{
+                            "min":97.92673041333533,
+                            "pkt":"100.617",
+                            "max":103.3072695866647
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26882,
+                "nazwa":"Technikum nr 6 w Zespole Szkół Przemysłu Spożywczego im. Powstańców Wielkopolskich w Łodzi",
+                "adres":"Franciszkańska 137, 91-845 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 72, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":47,
+                            "matematyka łącznie":47,
+                            "matematyka rozszerzona":1,
+                            "biologia łącznie":28,
+                            "biologia rozszerzona":28,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":1,
+                            "geografia rozszerzona":1,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-9.578038835095512,
+                            "pkt":"-6.27642",
+                            "max":-2.974801164904488
+                        },
+                        "egz":{
+                            "min":84.0750488196058,
+                            "pkt":"88.4268",
+                            "max":92.7785511803942
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26885,
+                "nazwa":"Technikum nr 7 w Zespole Szkół Samochodowych w Łodzi",
+                "adres":"Wojciecha Kilara 3/5, 91-335 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 145, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":133,
+                            "matematyka łącznie":133,
+                            "matematyka rozszerzona":63,
+                            "biologia łącznie":2,
+                            "biologia rozszerzona":2,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":50,
+                            "fizyka rozszerzona":50,
+                            "geografia łącznie":8,
+                            "geografia rozszerzona":8,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-6.3814488484603,
+                            "pkt":"-4.35387",
+                            "max":-2.326291151539699
+                        },
+                        "egz":{
+                            "min":91.9861325730502,
+                            "pkt":"94.7901",
+                            "max":97.59406742694979
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26892,
+                "nazwa":"Technikum nr 9 w Zespole Szkół Ponadgimnazjalnych nr 9 w Łodzi",
+                "adres":"Al. Politechniki 38, 93-590 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(255, 217, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":305,
+                            "matematyka łącznie":305,
+                            "matematyka rozszerzona":222,
+                            "biologia łącznie":2,
+                            "biologia rozszerzona":2,
+                            "chemia łącznie":1,
+                            "chemia rozszerzona":1,
+                            "fizyka łącznie":64,
+                            "fizyka rozszerzona":64,
+                            "geografia łącznie":15,
+                            "geografia rozszerzona":15,
+                            "informatyka łącznie":32,
+                            "informatyka rozszerzona":32
+                        },
+                        "ewd":{
+                            "min":4.558575700607025,
+                            "pkt":"5.91158",
+                            "max":7.264584299392975
+                        },
+                        "egz":{
+                            "min":108.5121622215814,
+                            "pkt":"110.366",
+                            "max":112.2198377784186
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":76799,
+                "nazwa":"Technikum Przy Łódzkiej Szkole Mody Kosmetologii Fryzjerstwa Anagra",
+                "adres":"Łanowa 4, 91-103 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(221, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":40,
+                            "matematyka łącznie":40,
+                            "matematyka rozszerzona":0,
+                            "biologia łącznie":24,
+                            "biologia rozszerzona":24,
+                            "chemia łącznie":0,
+                            "chemia rozszerzona":0,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":0,
+                            "geografia rozszerzona":0,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":0.3024866448789529,
+                            "pkt":"3.85123",
+                            "max":7.399973355121047
+                        },
+                        "egz":{
+                            "min":93.9378497123621,
+                            "pkt":"98.34",
+                            "max":102.7421502876379
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26883,
+                "nazwa":"Technikum w Zespole Szkół Ponadgimnazjalnych nr 20 im. Marszałka Józefa Piłsudskiego w Łodzi",
+                "adres":"Warecka 41, 91-212 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(149, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":70,
+                            "matematyka łącznie":70,
+                            "matematyka rozszerzona":30,
+                            "biologia łącznie":1,
+                            "biologia rozszerzona":1,
+                            "chemia łącznie":2,
+                            "chemia rozszerzona":2,
+                            "fizyka łącznie":6,
+                            "fizyka rozszerzona":6,
+                            "geografia łącznie":19,
+                            "geografia rozszerzona":19,
+                            "informatyka łącznie":3,
+                            "informatyka rozszerzona":3
+                        },
+                        "ewd":{
+                            "min":-4.208605357181908,
+                            "pkt":"-1.45888",
+                            "max":1.290845357181908
+                        },
+                        "egz":{
+                            "min":92.8707772041507,
+                            "pkt":"96.5657",
+                            "max":100.2606227958493
+                        },
+                        "teryt":106101
+                    }
+                }
+            },
+            {
+                "idSzkoly":26895,
+                "nazwa":"Zespół Szkół Gastronomicznych im. I Armii Wojska Polskiego w Łodzi",
+                "adres":"Sienkiewicza 88, 90-357 Łódź",
+                "okresy":{
+                    "2016-2018":{
+                        "wyswietlaj":true,
+                        "komunikat":"",
+                        "kolor":"background-color: rgb(77, 255, 0);opacity: 0.6;",
+                        "lu":{
+                            "ogółem":282,
+                            "matematyka łącznie":282,
+                            "matematyka rozszerzona":31,
+                            "biologia łącznie":92,
+                            "biologia rozszerzona":92,
+                            "chemia łącznie":5,
+                            "chemia rozszerzona":5,
+                            "fizyka łącznie":0,
+                            "fizyka rozszerzona":0,
+                            "geografia łącznie":67,
+                            "geografia rozszerzona":67,
+                            "informatyka łącznie":0,
+                            "informatyka rozszerzona":0
+                        },
+                        "ewd":{
+                            "min":-3.435012017314869,
+                            "pkt":"-2.02885",
+                            "max":-0.6226879826851301
+                        },
+                        "egz":{
+                            "min":95.41089987376876,
+                            "pkt":"97.2309",
+                            "max":99.05090012623126
+                        },
+                        "teryt":106101
+                    }
+                }
+            }
+        ]
+    }
+}
