@@ -8,7 +8,7 @@ export class HomeSearchBox extends Component {
 
   render() {
       return (
-          <Carousel>
+          <Carousel fade={true}>
             <Carousel.Item
                 style={{
                   maxHeight:"87vh",
@@ -37,7 +37,7 @@ export class HomeSearchBox extends Component {
                   textAlign:"justify",
                   textShadow:"1px 1px 2px black"
                 }}
-                >First slide label</h1>
+                >Szybko i przejrzyście</h1>
                 <p
                     style={{
                       color: "white",
@@ -45,9 +45,9 @@ export class HomeSearchBox extends Component {
                       textAlign:"justify",
                       textShadow:"1px 1px 2px black"
                     }}
-                >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                >Dowiedz się więcej o szkołach w 1 miejscu.</p>
                 <Link to={"/records"}>
-                  <Button size={"large"}>Try it now</Button></Link>
+                  <Button size={"large"}>Wypróbuj teraz</Button></Link>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item
@@ -79,7 +79,7 @@ export class HomeSearchBox extends Component {
                   textAlign:"justify",
                   textShadow:"1px 1px 2px black"
                 }}
-                >First slide label</h1>
+                >Znajdź coś dla siebie</h1>
                 <p
                     style={{
                       color: "white",
@@ -87,9 +87,9 @@ export class HomeSearchBox extends Component {
                       textAlign:"justify",
                       textShadow:"1px 1px 2px black"
                     }}
-                >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                >Nie masz pomysłu gdzie iść?</p>
                 <Link to={"/records"}>
-                  <Button size={"large"}>Try it now</Button></Link>
+                  <Button size={"large"}>Wyszukaj teraz</Button></Link>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item
@@ -117,7 +117,7 @@ export class HomeSearchBox extends Component {
                   textAlign:"justify",
                   textShadow:"1px 1px 2px black"
                 }}
-                >First slide label</h1>
+                >Poznaj szczegółowe statystyki</h1>
                 <p
                     style={{
                       color: "white",
@@ -125,9 +125,9 @@ export class HomeSearchBox extends Component {
                       textAlign:"justify",
                       textShadow:"1px 1px 2px black"
                     }}
-                >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                >Dowiedz się więcej o swojej wymarzonej szkole.</p>
                 <Link to={"/records"}>
-                  <Button size={"large"}>Try it now</Button></Link>
+                  <Button size={"large"}>Kliknij tutaj</Button></Link>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
