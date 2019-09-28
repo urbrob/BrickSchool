@@ -6,7 +6,7 @@ from graphene_django.types import DjangoObjectType
 class SchoolNode(DjangoObjectType):
     class Meta:
         model = School
-
+		
 
 class SchoolClassNode(DjangoObjectType):
 	class Meta:
