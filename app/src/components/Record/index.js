@@ -4,6 +4,7 @@ import { badges } from "./badges";
 
 const Record = ({
   name,
+  schoolId,
   location,
   perspektywyBadge,
   schoolType,
@@ -23,7 +24,7 @@ const Record = ({
       }}
     />
     <div className="recordInfo">
-      <div className="ranking">#{ranking} w rankingu wojewódzkim</div>
+      <div className="ranking">#{schoolId} w rankingu wojewódzkim</div>
       <div className="schoolName">{name}</div>
       <div className="location">{location}</div>
     </div>
@@ -33,13 +34,7 @@ const Record = ({
         <div className="wsk">{wsk}</div>
       </div>
       <div className="badge">
-        <img
-          src={badges.find(b => b.type === perspektywyBadge).icon}
-          height={120}
-          style={{
-            marginBottom: "15px"
-          }}
-        />
+        <img src={badges.find(b => b.type === perspektywyBadge).icon} />
       </div>
     </div>
   </div>
