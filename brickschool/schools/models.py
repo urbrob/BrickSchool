@@ -10,9 +10,17 @@ class School(models.Model):
 	website = models.URLField(max_length=200, null=True)
 	regon = models.CharField(max_length=14, null=True)
 	voivodship = models.CharField(max_length=50, null=True)
+	rspo = models.CharField(max_length=50, null=True)
 	location = models.CharField(max_length=250, null=True)
 	county = models.CharField(max_length=250, null=True)
 	community = models.CharField(max_length=250, null=True)
+	email = models.EmailField(null=True)
+	url = models.URLField(null=True)
+	phone = models.CharField(max_length=18, null=True)
+	nip = models.CharField(max_length=18, null=True)
+	is_public = models.BooleanField(default=True)
+	create_date = models.DateField(null=True)
+	specialization = models.CharField(max_length=255, null=True)
 	postal_code = models.CharField(max_length=6, null=True)
 
 
@@ -47,6 +55,8 @@ class FinalExam(models.Model):
 	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
 
 
-class Badges(models.Model):
-	badge_type = models.CharField(max_length=100)
-	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
+class PerspectiveBadge(models.Model):
+	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE, related_name='perspective_badge')
+	local_rating = models.IntegerField()
+	global_rating = models.IntegerField()
+	wsk = models.FloatField()

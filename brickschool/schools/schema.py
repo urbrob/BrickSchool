@@ -23,7 +23,7 @@ class SchoolFilter(django_filters.FilterSet):
                 'community',
                 'postal_code',
                 ]
-                
+
 
 class SchoolNode(DjangoObjectType):
     class Meta:
@@ -35,7 +35,7 @@ class SchoolNode(DjangoObjectType):
 class SchoolClassFilter(django_filters.FilterSet):
     name = django_filters.CharFilter(lookup_type=['icontains'])
     fields = ['specialization',
-            'school', 
+            'school',
             ]
 
 
@@ -59,7 +59,7 @@ class StatisticsClassFilter(django_filters.FilterSet):
 
 class StatisticsNode(DjangoObjectType):
     class Meta:
-        model = Statistics 
+        model = Statistics
         filterset_class = StatisticsClassFilter
 
 
@@ -76,7 +76,7 @@ class FinalExamFilter(django_filters.FilterSet):
 
 class FinalExamNode(DjangoObjectType):
     class Meta:
-        model = FinalExam 
+        model = FinalExam
         filterset_class = [FinalExamFilter]
 
 
@@ -99,15 +99,18 @@ class Query(graphene.ObjectType):
         first=graphene.Int(),
         skip=graphene.Int(),
     )
-    a = DjangoFilterConnectionField(SchoolNode)
+    schools_list = graphene.List(graphene.String, school_name=graphene.Argument(graphene.String, required=False))
 
 
     def resolve_schools(self, info, first=None, skip=None, **kwargs):
         schools = School.objects.all()
-
         if skip:
             schools = schools[skip:]
         if first:
             schools = schools[:first]
-
         return schools
+
+    def resolve_schools_list(self, info, school_name=None):
+        if school_name:
+            return School.objects.filter(name__startswith=school_name)[:10].values_list('name', flat=True)
+        return []
