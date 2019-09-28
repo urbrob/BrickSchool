@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 const Record = ({
   name,
@@ -7,20 +8,7 @@ const Record = ({
   schoolType,
   thumbnail
 }) => (
-  <div
-    style={{
-      width: "90%",
-      height: "30%",
-      padding: "15px 15px",
-      margin: "10px 15px",
-      backgroundColor: "#707070",
-      borderRadius: "10px",
-      color: "white",
-      display: "flex",
-      alignItems: "center",
-      justifyItems: "flex-start"
-    }}
-  >
+  <div className="recordBox">
     <img
       src={thumbnail}
       alt="School thumbnail"

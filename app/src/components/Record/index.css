@@ -1,0 +1,11 @@
+.recordBox {
+  background-color: #707070;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: flex-start;
+  width: 95%;
+  height: 30%;
+  margin-top: 15px;
+}

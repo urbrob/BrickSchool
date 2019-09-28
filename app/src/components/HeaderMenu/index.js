@@ -9,7 +9,7 @@ const HeaderMenu = () => (
       height: "8vh",
       display: "flex",
       alignItems: "center",
-      backgroundColor: "#505050"
+      backgroundImage: "linear-gradient(#505050,#5a5a5a)"
     }}
   >
     <div

@@ -7,7 +7,7 @@ const FooterCredits = () => (
       justifyContent: "center",
       alignItems: "center",
       height: "5vh",
-      backgroundColor: "#505050",
+      backgroundImage: "linear-gradient(#505050,#5a5a5a)",
       color: "white"
     }}
   >
