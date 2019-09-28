@@ -1,0 +1,14 @@
+.NavButtonsWrapper {
+  display: inline-flex;
+  margin-right: 5%;
+}
+.NavButton {
+  padding: 0 15px;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #ffae3c;
+  text-decoration: none;
+}

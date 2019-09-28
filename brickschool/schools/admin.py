@@ -20,6 +20,7 @@ class StatisticsAdmin(admin.ModelAdmin):
 
 @admin.register(FinalExam)
 class FinalExamAdmin(admin.ModelAdmin):
+
 	pass
 
 
