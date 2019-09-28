@@ -23,3 +23,5 @@ class Question(models.Model):
     category = models.CharField(max_length=100, choices=CATEGORIES_CHOICES, default='0')
     def __str__(self):
         return self.title
+    class Meta:
+        ordering = ('-quiz',)

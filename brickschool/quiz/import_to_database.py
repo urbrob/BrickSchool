@@ -3,7 +3,7 @@ from quiz.models import Question, Quiz
 
 
 #if __name__ == "__main__":
-q = Quiz.objects.create(name='Choosing school')
+q = Quiz.objects.create(title='Choosing school')
 with open('quiz/questions.csv', newline='') as csvfile:
 	reader = csv.DictReader(csvfile, fieldnames=['title', 'category'], delimiter=';')
 	for row in reader:
