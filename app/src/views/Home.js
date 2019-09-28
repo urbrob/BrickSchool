@@ -1,11 +1,19 @@
-import React, {Component} from 'react';
+import React from "react";
+import HeaderMenu from "../components/HeaderMenu";
+import FooterCredits from "../components/FooterCredits";
+import HomeSearchBox from "../components/HomeSearchBox/HomeSearchBox";
+import ContentWrapper from "../components/ContentWrapper";
+import "./layout.css";
 
-export class HomePage extends Component {
-    render() {
-        return (
-            <h1>Home page</h1>
-        );
-    }
-}
+const HomePage = () => {
+  return (
+    <div className="Layout">
+      <HeaderMenu />
+      <ContentWrapper>
+      </ContentWrapper>
+      <FooterCredits />
+    </div>
+  );
+};
 
 export default HomePage;
