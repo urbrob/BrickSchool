@@ -23,8 +23,7 @@ class SchoolFilter(django_filters.FilterSet):
                 'community',
                 'postal_code',
                 ]
-
-
+                
 
 class SchoolNode(DjangoObjectType):
     class Meta:
@@ -103,7 +102,7 @@ class Query(graphene.ObjectType):
     a = DjangoFilterConnectionField(SchoolNode)
 
 
-    def resolve_schools(self, info, search=None, first=None, skip=None, **kwargs):
+    def resolve_schools(self, info, first=None, skip=None, **kwargs):
         schools = School.objects.all()
 
         if skip:
