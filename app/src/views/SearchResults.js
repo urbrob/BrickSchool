@@ -26,16 +26,28 @@ const SearchResults = () => {
             alignItems: "center",
             justifyContent: "flex-start",
             backgroundImage: { ...background },
-            backgroundColor: "yellow"
+            backgroundColor: "#707070"
           }}
         >
-          <h2 style={{ margin: "10px 30px" }}>Filter 1: status</h2>
-          <h2 style={{ margin: "10px 30px" }}>Filter 2: status</h2>
-          <h2 style={{ margin: "10px 30px" }}>Filter 3: status</h2>
-          <h2 style={{ margin: "10px 30px" }}>Filter 4: status</h2>
-          <h2 style={{ margin: "10px 30px" }}>Filter 5: status</h2>
-          <h2 style={{ margin: "10px 30px" }}>Filter 6: status</h2>
-          <div style={{ marginLeft: "180px" }}>
+          <h2 style={{ margin: "10px 30px", color: "white" }}>
+            Filter 1: status
+          </h2>
+          <h2 style={{ margin: "10px 30px", color: "white" }}>
+            Filter 2: status
+          </h2>
+          <h2 style={{ margin: "10px 30px", color: "white" }}>
+            Filter 3: status
+          </h2>
+          <h2 style={{ margin: "10px 30px", color: "white" }}>
+            Filter 4: status
+          </h2>
+          <h2 style={{ margin: "10px 30px", color: "white" }}>
+            Filter 5: status
+          </h2>
+          <h2 style={{ margin: "10px 30px", color: "white" }}>
+            Filter 6: status
+          </h2>
+          <div style={{ marginLeft: "180px", color: "white" }}>
             <FiltersDrawer />
           </div>
         </div>
@@ -45,8 +57,7 @@ const SearchResults = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundImage: { ...background },
-            backgroundColor: "red"
+            backgroundImage: { ...background }
           }}
         >
           <h1>Search Results placeholder</h1>

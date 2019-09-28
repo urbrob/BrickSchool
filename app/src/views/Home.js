@@ -11,6 +11,7 @@ const HomePage = () => {
       <Layout className="layout" style={{ height: "100vh" }}>
         <HeaderMenu />
         <HomeSearchBox/>
+
         <FooterCredits />
       </Layout>
     </div>
