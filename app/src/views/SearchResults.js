@@ -33,6 +33,27 @@ const exampleRecords = [
     perspektywyBadge: true,
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder3
+  },
+  {
+    name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
+    distance: 2,
+    perspektywyBadge: true,
+    schoolType: "Liceum ogólnokształcące",
+    thumbnail: school_placeholder1
+  },
+  {
+    name: "Technikum nr 2 na Ślunsku",
+    distance: 666,
+    perspektywyBadge: false,
+    schoolType: "Technikum",
+    thumbnail: school_placeholder2
+  },
+  {
+    name: "Liceum Ogólnozniekształcające nr 12 w Łodzi",
+    distance: 1,
+    perspektywyBadge: true,
+    schoolType: "Liceum ogólnokształcące",
+    thumbnail: school_placeholder3
   }
 ];
 
@@ -72,6 +93,29 @@ const SearchResults = () => {
           <div style={{ marginLeft: "350px", color: "white" }}>
             <FiltersDrawer />
           </div>
+        </div>
+        <div
+          title="searchResultsContainer"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            flexWrap: "nowrap",
+            alignItems: "center",
+            justifyContent: "flex-start",
+            height: "100%",
+            width: "100%",
+            backgroundImage: "linear-gradient(white,#ffdcab)"
+          }}
+        >
+          {exampleRecords.map(record => (
+            <Record
+              name={record.name}
+              distance={record.distance}
+              perspektywyBadge={record.perspektywyBadge}
+              schoolType={record.schoolType}
+              thumbnail={record.thumbnail}
+            />
+          ))}
         </div>
       </ContentWrapper>
       <FooterCredits />

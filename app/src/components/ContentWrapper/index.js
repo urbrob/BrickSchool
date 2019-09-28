@@ -8,7 +8,8 @@ const ContentWrapper = ({ children }) => {
         height: "87vh",
         display: "flex",
         alignItems: "flex-start",
-        justifyContent: "center"
+        justifyContent: "center",
+        flexDirection: "column"
       }}
     >
       {children}
