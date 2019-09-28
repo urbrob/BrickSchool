@@ -6,7 +6,7 @@ const FooterCredits = () => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: "5%",
+      height: "5vh",
       backgroundColor: "#505050",
       color: "white"
     }}

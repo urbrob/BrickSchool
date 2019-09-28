@@ -8,6 +8,7 @@ import school_placeholder1 from "../images/school_placeholder1.jpg";
 import school_placeholder2 from "../images/school_placeholder2.jpg";
 import school_placeholder3 from "../images/school_placeholder3.jpg";
 import "./layout.css";
+import ContentWrapper from "../components/ContentWrapper";
 
 const { Content } = Layout;
 
@@ -39,47 +40,40 @@ const SearchResults = () => {
   return (
     <div className="Layout">
       <HeaderMenu />
-      <div
-        title="filtersContainer"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "flex-start",
-          backgroundColor: "#707070"
-        }}
-      >
-        <p style={{ margin: "10px 30px", color: "white" }}>Filter 1: status</p>
-        <p style={{ margin: "10px 30px", color: "white" }}>Filter 2: status</p>
-        <p style={{ margin: "10px 30px", color: "white" }}>Filter 3: status</p>
-        <p style={{ margin: "10px 30px", color: "white" }}>Filter 4: status</p>
-        <p style={{ margin: "10px 30px", color: "white" }}>Filter 5: status</p>
-        <p style={{ margin: "10px 30px", color: "white" }}>Filter 6: status</p>
-        <div style={{ marginLeft: "350px", color: "white" }}>
-          <FiltersDrawer />
+      <ContentWrapper>
+        <div
+          title="filtersContainer"
+          style={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-start",
+            backgroundColor: "#707070"
+          }}
+        >
+          <p style={{ margin: "10px 30px", color: "white" }}>
+            Filter 1: status
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
+            Filter 2: status
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
+            Filter 3: status
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
+            Filter 4: status
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
+            Filter 5: status
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
+            Filter 6: status
+          </p>
+          <div style={{ marginLeft: "350px", color: "white" }}>
+            <FiltersDrawer />
+          </div>
         </div>
-      </div>
-      <Content
-        title="searchResultsContainer"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          flexWrap: "nowrap",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "160px",
-          backgroundColor: "red"
-        }}
-      >
-        {exampleRecords.map(record => (
-          <Record
-            name={record.name}
-            distance={record.distance}
-            perspektywyBadge={record.perspektywyBadge}
-            schoolType={record.schoolType}
-            thumbnail={record.thumbnail}
-          />
-        ))}
-      </Content>
+      </ContentWrapper>
       <FooterCredits />
     </div>
   );

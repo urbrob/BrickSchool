@@ -6,7 +6,7 @@ import "./index.css";
 const HeaderMenu = () => (
   <div
     style={{
-      height: "50px",
+      height: "8vh",
       display: "flex",
       alignItems: "center",
       backgroundColor: "#505050"

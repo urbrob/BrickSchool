@@ -5,9 +5,9 @@ const ContentWrapper = ({ children }) => {
     <div
       style={{
         backgroundColor: "limegreen",
-        height: "100%",
+        height: "87vh",
         display: "flex",
-        alignItems: "center",
+        alignItems: "flex-start",
         justifyContent: "center"
       }}
     >
