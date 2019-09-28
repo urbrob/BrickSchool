@@ -26,61 +26,68 @@ const FiltersDrawer = () => {
         <b>Filter</b> <Icon type="right" />
       </Button>
       <Drawer
-        title="Create a new account"
-        width={720}
+        title="Lista filtrów"
+        width={"50vw"}
         onClose={onClose}
         visible={isVisible}
+
       >
         <Form layout="vertical" hideRequiredMark>
           <Row gutter={16}>
             <Col span={12}>
-              <Form.Item label="Name"></Form.Item>
+              <Form.Item label="Nazwa szkoły">
+                <Input placeholder="Nazwa" />
+              </Form.Item>
+
             </Col>
             <Col span={12}>
-              <Form.Item label="Url">
+              <Form.Item label="Maksymalna odległość">
                 <Input
-                  style={{ width: "100%" }}
-                  addonBefore="http://"
-                  addonAfter=".com"
-                  placeholder="Please enter url"
+                    placeholder={"Max odległość"}
                 />
-                )}
               </Form.Item>
             </Col>
           </Row>
           <Row gutter={16}>
             <Col span={12}>
-              <Form.Item label="Owner">
-                <Select placeholder="Please select an owner">
-                  <Option value="xiao">Xiaoxiao Fu</Option>
-                  <Option value="mao">Maomao Zhou</Option>
+              <Form.Item label="Typ szkoły">
+                <Select placeholder="Wybierz typ szkoły">
+                  <Option value="liceum">Liceum</Option>
+                  <Option value="technikum">Technikum</Option>
                 </Select>
-                )}
               </Form.Item>
             </Col>
             <Col span={12}>
-              <Form.Item label="Type">
-                <Select placeholder="Please choose the type">
-                  <Option value="private">Private</Option>
-                  <Option value="public">Public</Option>
+              <Form.Item label="Publiczna/Prywatna">
+                <Select placeholder="Wybierz typ szkoły">
+                  <Option value="prywatna">Prywatna</Option>
+                  <Option value="publiczna">Publiczna</Option>
                 </Select>
-                )}
               </Form.Item>
             </Col>
           </Row>
           <Row gutter={16}>
             <Col span={12}>
-              <Form.Item label="Approver"></Form.Item>
+              <Form.Item label="Odznaka Perspektyw">
+                <Select placeholder="Wybierz typ odznaki">
+                  <Option value="brak">Brak</Option>
+                  <Option value="braz">Brązowa</Option>
+                  <Option value="srebro">Srebrna</Option>
+                  <Option value="zloto">Złota</Option>
+                </Select>
+              </Form.Item>
             </Col>
             <Col span={12}>
-              <Form.Item label="DateTime"></Form.Item>
+              <Form.Item label="Publiczna/Prywatna">
+                <Select placeholder="Wybierz typ szkoły">
+                  <Option value="prywatna">Prywatna</Option>
+                  <Option value="publiczna">Publiczna</Option>
+                </Select>
+              </Form.Item>
             </Col>
           </Row>
-          <Row gutter={16}>
-            <Col span={24}>
-              <Form.Item label="Description"></Form.Item>
-            </Col>
-          </Row>
+
+
         </Form>
         <div
           style={{
@@ -90,7 +97,7 @@ const FiltersDrawer = () => {
             width: "100%",
             borderTop: "1px solid #e9e9e9",
             padding: "10px 16px",
-            background: "#fff",
+            background: "#505050",
             textAlign: "right"
           }}
         >
