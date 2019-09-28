@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import School, SchoolClass, Statistics, final_exam, Badges
+from .models import School, SchoolClass, Statistics, FinalExam, Badges
 
 # Register your models here.
 
@@ -19,7 +19,7 @@ class StatisticsAdmin(admin.ModelAdmin):
 
 
 @admin.register(FinalExam)
-class final_examAdmin(admin.ModelAdmin):
+class FinalExamAdmin(admin.ModelAdmin):
 	pass
 
 
