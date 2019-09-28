@@ -23,7 +23,8 @@ const HeaderMenu = () => (
         lineHeight: "64px",
         justifySelf: "flex-end",
         textAlign: "right",
-        backgroundColor: "inherit"
+        backgroundColor: "inherit",
+        selectColor: "red"
       }}
     >
       <Menu.Item>Menu item 1</Menu.Item>

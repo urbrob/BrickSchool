@@ -29,25 +29,25 @@ const SearchResults = () => {
             backgroundColor: "#707070"
           }}
         >
-          <h2 style={{ margin: "10px 30px", color: "white" }}>
+          <p style={{ margin: "10px 30px", color: "white" }}>
             Filter 1: status
-          </h2>
-          <h2 style={{ margin: "10px 30px", color: "white" }}>
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
             Filter 2: status
-          </h2>
-          <h2 style={{ margin: "10px 30px", color: "white" }}>
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
             Filter 3: status
-          </h2>
-          <h2 style={{ margin: "10px 30px", color: "white" }}>
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
             Filter 4: status
-          </h2>
-          <h2 style={{ margin: "10px 30px", color: "white" }}>
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
             Filter 5: status
-          </h2>
-          <h2 style={{ margin: "10px 30px", color: "white" }}>
+          </p>
+          <p style={{ margin: "10px 30px", color: "white" }}>
             Filter 6: status
-          </h2>
-          <div style={{ marginLeft: "180px", color: "white" }}>
+          </p>
+          <div style={{ marginLeft: "350px", color: "white" }}>
             <FiltersDrawer />
           </div>
         </div>
