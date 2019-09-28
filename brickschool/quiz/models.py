@@ -8,5 +8,4 @@ class Quiz(models.Model):
 class Question(models.Model):
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     title = models.CharField(max_length=250)
-    answers = models.IntegerField()
     category = models.CharField(max_length=100)
