@@ -1,3 +1,24 @@
+.headerWrapper {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(#505050, #5a5a5a);
+}
+.logo {
+  width: 20%;
+  height: 100%;
+  padding: 5px 30px;
+}
+img {
+  height: 100%;
+}
+.navMenu {
+  width: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+
 .NavButtonsWrapper {
   display: inline-flex;
   margin-right: 5%;
@@ -11,4 +32,41 @@ a {
 a:hover {
   color: #ffae3c;
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .headerWrapper {
+    all: unset;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-flow: column wrap;
+    background-image: linear-gradient(#505050, #5a5a5a);
+  }
+  .logo {
+    all: unset;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+  img {
+    width: 60%;
+  }
+  .navMenu {
+    all: unset;
+  }
+
+  .NavButtonsWrapper {
+    all: unset;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    justify-content: center;
+  }
+  .NavButton {
+    font-size: 5vw;
+    padding: 0 50px;
+  }
 }

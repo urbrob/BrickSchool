@@ -1,0 +1,15 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-image: linear-gradient(#505050,#5a5a5a);
+  color: #ffae3c;
+}
+
+@media screen and (max-width: 600px) {
+  .Footer {
+    display: none;
+  }
+ }
+
