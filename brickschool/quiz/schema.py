@@ -13,9 +13,9 @@ class QuestionNode(DjangoObjectType):
         model = Question
 
 class Query(graphene.ObjectType):
-    quizzes = graphene.List(QuizNode, name=graphene.String())
+    quizzes = graphene.List(QuizNode, title=graphene.String())
 
     def resolve_quizzes(self, info, **kwargs):
-        if kwargs['name']:
-            return Quiz.objects.filter(name=kwargs['name'])
+        if kwargs['title']:
+            return Quiz.objects.filter(title=kwargs['title'])
         return []
