@@ -1,6 +1,7 @@
 from django.test import RequestFactory, TestCase
 from graphene.test import Client
 from brickschool.schema import schema
+from schools.factory_bot import SchoolFactory
 
 def execute_test_client_api_query(query):
     client = Client(schema)
@@ -16,3 +17,7 @@ class APITest(TestCase):
         executed = execute_test_client_api_query(query)
         data = executed.get('data')
         self.assertEqual(data['test'], None)
+
+class SchoolTest(TestCase):
+    def test(self):
+        pass
