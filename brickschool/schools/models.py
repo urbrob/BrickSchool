@@ -55,6 +55,8 @@ class FinalExam(models.Model):
 	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
 
 
-class Badges(models.Model):
-	badge_type = models.CharField(max_length=100)
-	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE)
+class PerspectiveBadge(models.Model):
+	statistic = models.ForeignKey(Statistics, on_delete=models.CASCADE, related_name='perspective_badge')
+	local_rating = models.IntegerField()
+	global_rating = models.IntegerField()
+	wsk = models.FloatField()
