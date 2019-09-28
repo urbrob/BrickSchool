@@ -3,31 +3,38 @@ import "./index.css";
 
 const Record = ({
   name,
-  distance,
+  location,
   perspektywyBadge,
   schoolType,
-  thumbnail
+  thumbnail,
+  wsk,
+  ranking
 }) => (
   <div className="recordBox">
     <img
       src={thumbnail}
       alt="School thumbnail"
-      height="90%"
-      width="250vw"
-      style={{ borderRadius: "5px", marginRight: "20px" }}
-    />
-    <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "nowrap",
-        alignItems: "flex-start"
+        borderRadius: "5px",
+        marginRight: "20px",
+        width: "20%",
+        height: "100%"
       }}
-    >
-      <h1>{name}</h1>
-      <h3>{distance}</h3>
-      <p>{perspektywyBadge ? "Odznaka Perspektywy 2019" : ""}</p>
-      <p>{schoolType}</p>
+    />
+    <div className="recordInfo">
+      <div className="ranking">#{ranking} w rankingu wojewódzkim</div>
+      <div className="schoolName">{name}</div>
+      <div className="location">{location}</div>
+    </div>
+    <div className="recordStatistics">
+      <div className="statisticsBox">
+        <p>WSK</p>
+        <div className="wsk">{wsk}</div>
+      </div>
+      <div className="statisticsBox">
+        <p>Perspektywy</p>
+        <div className="badge">badge</div>
+      </div>
     </div>
   </div>
 );

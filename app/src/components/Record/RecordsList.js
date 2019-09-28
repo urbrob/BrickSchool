@@ -9,74 +9,79 @@ import Record from ".";
 const items = [
   {
     name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
-    distance: 2,
+    location: "Pcim Dolny, dolnośląskie",
+    wsk: 50,
+    ranking: 4,
     perspektywyBadge: true,
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder1
   },
   {
     name: "Technikum nr 2 na Ślunsku",
-    distance: 666,
+    location: "Wrocław, dolnośląskie",
+    wsk: 23,
+    ranking: 12,
     perspektywyBadge: false,
     schoolType: "Technikum",
     thumbnail: school_placeholder2
   },
   {
     name: "Liceum Ogólnozniekształcające nr 12 w Łodzi",
-    distance: 1,
+    location: "Uć, łódzkie",
+    wsk: 90,
+    ranking: 2,
     perspektywyBadge: true,
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder3
   },
   {
     name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
-    distance: 2,
+    location: "Pcim Dolny",
+    wsk: 50,
+    ranking: 4,
+    perspektywyBadge: true,
+    schoolType: "Liceum ogólnokształcące",
+    thumbnail: school_placeholder1
+  },
+  {
+    name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
+    location: "Pcim Dolny, dolnośląskie",
+    wsk: 50,
+    ranking: 4,
     perspektywyBadge: true,
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder1
   },
   {
     name: "Technikum nr 2 na Ślunsku",
-    distance: 666,
+    location: "Wrocław, dolnośląskie",
+    wsk: 23,
+    ranking: 12,
     perspektywyBadge: false,
     schoolType: "Technikum",
     thumbnail: school_placeholder2
   },
   {
     name: "Liceum Ogólnozniekształcające nr 12 w Łodzi",
-    distance: 1,
+    location: "Uć, łódzkie",
+    wsk: 90,
+    ranking: 2,
     perspektywyBadge: true,
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder3
   }
 ];
 
-const Row = ({ index }) => (
-  <div
-    style={{
-      height: "100%",
-      width: "100%",
-      backgroundColor: "red"
-    }}
-  >
-    <Record
-      name={items[index].name}
-      distance={items[index].distance}
-      thumbnail={items[index].thumbnail}
-      schoolType={items[index].schoolType}
-      perspektywyBadge={items[index].perspektywyBadge}
-    />
-  </div>
-);
-
 const getRecord = index => {
   return (
     <Record
       name={items[index].name}
-      distance={items[index].distance}
+      location={items[index].location}
       thumbnail={items[index].thumbnail}
       schoolType={items[index].schoolType}
       perspektywyBadge={items[index].perspektywyBadge}
+      wsk={items[index].wsk}
+      ranking={items[index].ranking}
     />
   );
 };
@@ -84,9 +89,9 @@ const getRecord = index => {
 const RecordsList = () => (
   <Virtuoso
     totalCount={items.length}
-    overscan={200}
+    overscan={10}
     item={getRecord}
-    style={{ height: "100%", width: "90%" }}
+    style={{ height: "100%", width: "100%" }}
   />
 );
 

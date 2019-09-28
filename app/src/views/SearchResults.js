@@ -53,7 +53,8 @@ const SearchResults = () => {
             justifyContent: "flex-start",
             height: "100%",
             width: "100%",
-            backgroundImage: "linear-gradient(white,#ffdcab)"
+            backgroundColor: "black"
+            // backgroundImage: "linear-gradient(white,#ffdcab)"
           }}
         >
           <RecordsList />
