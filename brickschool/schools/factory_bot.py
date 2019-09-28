@@ -19,6 +19,6 @@ class SchoolFactory(DjangoModelFactory):
     voivodship = lazy_attribute(lambda x: fake.color_name())
     street = lazy_attribute(lambda x: fake.street_address())
     house_number = lazy_attribute(lambda x: fake.building_number())
-    country = lazy_attribute(lambda x: fake.country())
+    county = lazy_attribute(lambda x: fake.country())
     community = lazy_attribute(lambda x: fake.paragraph(nb_sentences=3, variable_nb_sentences=True, ext_word_list=None))
     postal_code = lazy_attribute(lambda x: fake.postcode())
