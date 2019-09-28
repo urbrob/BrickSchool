@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import { badges } from "./badges";
 
 const Record = ({
   name,
@@ -31,9 +32,14 @@ const Record = ({
         <p>WSK</p>
         <div className="wsk">{wsk}</div>
       </div>
-      <div className="statisticsBox">
-        <p>Perspektywy</p>
-        <div className="badge">badge</div>
+      <div className="badge">
+        <img
+          src={badges.find(b => b.type === perspektywyBadge).icon}
+          height={120}
+          style={{
+            marginBottom: "15px"
+          }}
+        />
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@ const items = [
     location: "Pcim Dolny, dolnośląskie",
     wsk: 50,
     ranking: 4,
-    perspektywyBadge: true,
+    perspektywyBadge: "silver",
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder1
   },
@@ -21,7 +21,7 @@ const items = [
     location: "Wrocław, dolnośląskie",
     wsk: 23,
     ranking: 12,
-    perspektywyBadge: false,
+    perspektywyBadge: "bronze",
     schoolType: "Technikum",
     thumbnail: school_placeholder2
   },
@@ -30,25 +30,16 @@ const items = [
     location: "Uć, łódzkie",
     wsk: 90,
     ranking: 2,
-    perspektywyBadge: true,
+    perspektywyBadge: "gold",
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder3
-  },
-  {
-    name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
-    location: "Pcim Dolny",
-    wsk: 50,
-    ranking: 4,
-    perspektywyBadge: true,
-    schoolType: "Liceum ogólnokształcące",
-    thumbnail: school_placeholder1
   },
   {
     name: "Liceum Ogólnozniekształcające nr 5 w Pcimiu Dolnym",
     location: "Pcim Dolny, dolnośląskie",
     wsk: 50,
     ranking: 4,
-    perspektywyBadge: true,
+    perspektywyBadge: "silver",
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder1
   },
@@ -57,7 +48,7 @@ const items = [
     location: "Wrocław, dolnośląskie",
     wsk: 23,
     ranking: 12,
-    perspektywyBadge: false,
+    perspektywyBadge: "bronze",
     schoolType: "Technikum",
     thumbnail: school_placeholder2
   },
@@ -66,7 +57,7 @@ const items = [
     location: "Uć, łódzkie",
     wsk: 90,
     ranking: 2,
-    perspektywyBadge: true,
+    perspektywyBadge: "gold",
     schoolType: "Liceum ogólnokształcące",
     thumbnail: school_placeholder3
   }
