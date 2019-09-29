@@ -102,4 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
+app/package-lock.json
+app/package.json
+=======
 .DS_Store
+>>>>>>> 66d619cb9bcf0814c01003241f7064e563f4673a
