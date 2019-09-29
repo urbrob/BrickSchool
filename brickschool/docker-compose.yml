@@ -3,15 +3,22 @@ version: '3'
 services:
   django:
     build: .
-    command: python manage.py runserver 0.0.0.0:1337
+    command: python manage.py runserver 0.0.0.0:8080
     volumes:
       - .:/code
     ports:
-      - "8000:1337"
+      - "8080:8080"
     depends_on:
       - migration
   migration:
     build: .
     command: python manage.py migrate
+    volumes:
+      - .:/code
+    depends_on:
+      - update
+  update:
+    build: .
+    command: pip install -r requirements.txt
     volumes:
       - .:/code
