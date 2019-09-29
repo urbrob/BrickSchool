@@ -134,7 +134,6 @@ def parse_growth_data(bag_of_words, json_file, main_head):
                         if school.count() == 1:
                             school = school.get()
                             break
-                        school = school.filter(name__icontains=word)
                     except:
                         pass
             else:
