@@ -9,17 +9,16 @@ import Record from ".";
 const RecordsList = ({ schools }) => {
   const getRecord = index => {
     const formattedLocation = `${schools[index].location} ${schools[index].city}, ${schools[index].voivodship}`;
-
     return (
       <Record
         name={schools[index].name}
-        schoolId={schools[index].id}
+        pk={schools[index].pk}
         location={formattedLocation}
         thumbnail={school_placeholder1}
         schoolType={schools[index].typeSchool}
         perspektywyBadge="bronze"
-        wsk={66}
-        ranking={1}
+        wsk= {schools[index].statisticsSet[0].perspectiveBadge[0] != null ? schools[index].statisticsSet[0].perspectiveBadge[0].wsk : 0 }
+        ranking={schools[index].statisticsSet[0].perspectiveBadge[0] != null ? schools[index].statisticsSet[0].perspectiveBadge[0].localRating : 0 }
       />
     );
   };
