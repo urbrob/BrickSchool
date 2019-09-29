@@ -1,5 +1,5 @@
 import graphene
-from .models import School, SchoolClass, Statistics, FinalExam
+from .models import School, SchoolClass, Statistics, FinalExam, PerspectiveBadge
 from graphene_django.types import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
 import django_filters
@@ -24,6 +24,21 @@ class SchoolFilter(django_filters.FilterSet):
             return queryset.filter(statistics__perspective_badge__global_rating__lt=200)
         elif value == 'bronze':
             return queryset.filter(statistics__perspective_badge__global_rating__lt=500)
+
+class PerspectiveBadge(DjangoObjectType):
+    badge = graphene.String()
+    class Meta:
+        model = PerspectiveBadge
+
+    def resolve_badge(self, info):
+        if self.position_global < 100:
+            return "gold"
+        if self.position_global < 200:
+            return "silver"
+        if self.position_global < 500:
+            return "bronze"
+        return "shit"
+
 
 class SchoolNode(DjangoObjectType):
     class Meta:
