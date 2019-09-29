@@ -31,19 +31,25 @@ class PerspectiveBadge(DjangoObjectType):
         model = PerspectiveBadge
 
     def resolve_badge(self, info):
-        if self.position_global < 100:
-            return "gold"
-        if self.position_global < 200:
-            return "silver"
-        if self.position_global < 500:
-            return "bronze"
+        if self.global_rating:
+            if self.global_rating < 100:
+                return "gold"
+            if self.global_rating < 200:
+                return "silver"
+            if self.global_rating < 500:
+                return "bronze"
         return "shit"
 
 
 class SchoolNode(DjangoObjectType):
+    pk = graphene.Field(graphene.Int)
+
     class Meta:
         model = School
         interfaces = (relay.Node, )
+
+    def resolve_id(self, info):
+        return self.id
 
 
 class SchoolClassNode(DjangoObjectType):
@@ -67,7 +73,7 @@ class Query(graphene.ObjectType):
         filterset_class=SchoolFilter
     )
     schools_list = graphene.List(graphene.String, school_name=graphene.Argument(graphene.String, required=False))
-    school_detail = graphene.Field(SchoolNode, id=graphene.Argument(graphene.Int, required=True))
+    school_detail = graphene.Field(SchoolNode, pk=graphene.Argument(graphene.Int, required=True))
 
     def resolve_schools_list(self, info, school_name=None):
         if school_name:
@@ -75,5 +81,5 @@ class Query(graphene.ObjectType):
             return School.objects.filter(name__contains=school_name)[:10].values_list('name', flat=True)
         return []
 
-    def resolve_school_detail(self, info, id):
-        return School.objects.get(id=id)
+    def resolve_school_detail(self, info, pk):
+        return School.objects.get(id=pk)
