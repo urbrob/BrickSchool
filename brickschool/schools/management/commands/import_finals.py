@@ -3,6 +3,7 @@ from django.db.models import Q
 from schools.models import School, Statistics, FinalExam, PerspectiveBadge
 from difflib import SequenceMatcher
 from collections import defaultdict
+from random import randint
 import json
 import csv
 
@@ -156,6 +157,46 @@ def parse_growth_data(bag_of_words, json_file, main_head):
                     pass
 
 
+def mockup_exams():
+    list_of_examps = [
+        ['Matematyka', 'PP'],
+        ['Matematyka', 'PR'],
+        ['Język polski', 'PP'],
+        ['Język polski', 'PR'],
+        ['Biologia', 'PR'],
+        ['Chemia', 'PR'],
+        ['Geografia', 'PR'],
+        ['Historia', 'PR'],
+        ['Język angielski', 'PP'],
+        ['Język angielski', 'PR'],
+        ['Język niemiecki', 'PP'],
+        ['Język niemiecki', 'PR'],
+        ['Informatyka', 'PR']
+    ]
+    for stats in Statistics.objects.all():
+        for subject, data_type in list_of_examps:
+            try:
+                FinalExam.objects.get(statistic=stats, subject=subject, data_type=data_type)
+            except:
+                FinalExam.objects.create(statistic=stats, subject=subject, data_type=data_type, avg_rate=0)
+
+
+def mockup_urls():
+    for school in School.objects.filter(url__isnull=True):
+        school.url = f'www.{school.name.lower()}.pl'
+        school.save()
+
+def mockup_phone():
+    for school in School.objects.filter(phone__isnull=True):
+        school.phone = ''.join([str(randint(0, 9)) for _ in range(10)])
+        school.save()
+
+def mockup_missing_data():
+    mockup_exams()
+    mockup_urls()
+    mockup_phone()
+
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         load_finals_avg_file('data_imports/podstawy2.csv', "PP")
@@ -172,3 +213,4 @@ class Command(BaseCommand):
         parse_growth_data(bag_of_words, 'data_imports/human-tech.json', 'mth_2016')
         parse_growth_data(bag_of_words, 'data_imports/mat-high.json', 'mlmp_2016')
         parse_growth_data(bag_of_words, 'data_imports/mat-tech.json', 'mtmp_2016')
+        mockup_missing_data()
