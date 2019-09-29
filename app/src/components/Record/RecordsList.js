@@ -8,6 +8,7 @@ import Record from ".";
 
 const RecordsList = ({ schools }) => {
   const getRecord = index => {
+
     const formattedLocation = `${schools[index].location || ""} ${schools[index]
       .city || ""} ${schools[index].voivodship || ""}`;
     return (
