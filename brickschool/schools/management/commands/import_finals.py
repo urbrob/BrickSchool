@@ -122,23 +122,23 @@ def float_my(string):
         return float(string)
     return None
 
-
 def parse_growth_data(bag_of_words, json_file, main_head):
     with open(json_file) as json_f:
         data = json.load(json_f)[main_head]
         subject = data['skrot']
         for school_data in data['szkoly']:
-
             school = School.objects.filter(location__icontains=school_data['adres'].split(',')[0])
             for word in school_data['nazwa'].split(' '):
                 if word in bag_of_words:
                     try:
-                        school = school.filter(name__icontains=word)
                         if school.count() == 1:
                             school = school.get()
                             break
+                        school = school.filter(name__icontains=word)
                     except:
                         pass
+            else:
+                school = school.first()
             if isinstance(school, School):
                 try:
                     if subject == 'humanistyczny' or subject == 'język polski':
@@ -148,7 +148,7 @@ def parse_growth_data(bag_of_words, json_file, main_head):
                             human_ewd_exam_rate=float_my(data['egz']['pkt']),
                         )
                     else:
-                        import pdb; pdb.set_trace()
+                        data = school_data['okresy']['2016-2018']
                         stats = Statistics.objects.filter(school_id=school.id).update(
                             math_ewd_rate=float_my(data['ewd']['pkt']),
                             math_ewd_exam_rate=float_my(data['egz']['pkt']),
