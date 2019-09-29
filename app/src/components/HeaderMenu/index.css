@@ -5,23 +5,22 @@
   background-image: linear-gradient(#505050, #5a5a5a);
 }
 .logo {
-  width: 20%;
-  height: 100%;
+  width: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 img {
-  height: 100%;
+  object-fit: fill;
 }
 .navMenu {
-  width: 80%;
+  width: 80vw;
   display: flex;
   align-content: center;
   justify-content: flex-end;
 }
 
-.NavButtonsWrapper {
+.navButtonsWrapper {
   display: inline-flex;
   margin-right: 5%;
 }
@@ -40,35 +39,38 @@ a:hover {
   .headerWrapper {
     all: unset;
     width: 100%;
-    height: 20vh;
+    height: 100px;
     display: flex;
     flex-flow: column wrap;
     background-image: linear-gradient(#505050, #5a5a5a);
   }
   .logo {
     all: unset;
-    width: 100%;
-    padding-top: 10px;
+    height: 50px;
     text-align: center;
   }
+
   img {
-    width: 60%;
+    min-width: 60%;
+    min-height: 100%;
   }
   .navMenu {
     all: unset;
   }
 
-  .NavButtonsWrapper {
+  .navButtonsWrapper {
     all: unset;
     display: inline-flex;
     width: 100%;
-    height: 100%;
+    height: 50px;
     text-align: center;
-    padding-top: 10px;
     justify-content: center;
   }
   .NavButton {
     font-size: 5vw;
-    padding: 0 50px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

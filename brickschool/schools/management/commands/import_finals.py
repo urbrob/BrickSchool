@@ -3,6 +3,7 @@ from django.db.models import Q
 from schools.models import School, Statistics, FinalExam, PerspectiveBadge
 from difflib import SequenceMatcher
 from collections import defaultdict
+from random import randint
 import json
 import csv
 
@@ -156,6 +157,82 @@ def parse_growth_data(bag_of_words, json_file, main_head):
                     pass
 
 
+def mockup_exams():
+    list_of_examps = [
+        ['Matematyka', 'PP'],
+        ['Matematyka', 'PR'],
+        ['Język polski', 'PP'],
+        ['Język polski', 'PR'],
+        ['Biologia', 'PR'],
+        ['Chemia', 'PR'],
+        ['Geografia', 'PR'],
+        ['Historia', 'PR'],
+        ['Język angielski', 'PP'],
+        ['Język angielski', 'PR'],
+        ['Język niemiecki', 'PP'],
+        ['Język niemiecki', 'PR'],
+        ['Informatyka', 'PR'],
+        ['Muzyka', 'PR']
+    ]
+    for stats in Statistics.objects.all():
+        for subject, data_type in list_of_examps:
+            try:
+                FinalExam.objects.get(statistic=stats, subject=subject, data_type=data_type)
+            except:
+                FinalExam.objects.create(statistic=stats, subject=subject, data_type=data_type, avg_rate=0)
+
+
+def mockup_urls():
+    for school in School.objects.filter(url__isnull=True):
+        school.url = f'www.{school.name.lower()}.pl'
+        school.save()
+
+def mockup_phone():
+    for school in School.objects.filter(phone__isnull=True):
+        school.phone = ''.join([str(randint(0, 9)) for _ in range(10)])
+        school.save()
+
+def mockup_perspectives():
+    human_ewd_rate = Statistics.objects.filter(human_ewd_rate__isnull=False).values_list('human_ewd_rate', flat=True)
+    human_ewd_exam_rate = Statistics.objects.filter(human_ewd_rate__isnull=False).values_list('human_ewd_exam_rate', flat=True)
+    math_ewd_rate = Statistics.objects.filter(human_ewd_rate__isnull=False).values_list('math_ewd_rate', flat=True)
+    math_ewd_exam_rate = Statistics.objects.filter(human_ewd_rate__isnull=False).values_list('math_ewd_exam_rate', flat=True)
+    human_ewd_rate_avg = sum(human_ewd_rate) / len(human_ewd_rate)
+    human_ewd_exam_rate_avg = sum(human_ewd_exam_rate) / len(human_ewd_exam_rate)
+    math_ewd_rate_avg = sum(math_ewd_rate) / len(math_ewd_rate)
+    math_ewd_exam_rate_avg = sum(math_ewd_exam_rate) / len(math_ewd_exam_rate)
+    Statistics.objects.filter(human_ewd_rate__isnull=True).update(
+    	human_ewd_rate=human_ewd_rate_avg,
+    	human_ewd_exam_rate=human_ewd_exam_rate_avg,
+    	math_ewd_rate=math_ewd_rate_avg,
+    	math_ewd_exam_rate=math_ewd_exam_rate_avg,
+    )
+
+def mockup_badges():
+    for stats in Statistics.objects.filter(perspective_badge__isnull=True):
+        PerspectiveBadge.objects.create(
+            statistic=stats,
+            local_rating=randint(100, 500),
+        	global_rating=randint(100, 500),
+        	wsk=randint(20, 60),
+        )
+
+def mockup_missing_data():
+    mockup_exams()
+    mockup_urls()
+    mockup_phone()
+    mockup_perspectives()
+    mockup_badges()
+
+def import_quizes():
+    from quiz.models import Question, Quiz
+    q = Quiz.objects.create(title='testtti')
+    with open('quiz/questions.csv', newline='') as csvfile:
+    	reader = csv.DictReader(csvfile, fieldnames=['title', 'category'], delimiter=';')
+    	for row in reader:
+    		Question.objects.create(quiz=q, title=row['title'], category=row['category'])
+
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         load_finals_avg_file('data_imports/podstawy2.csv', "PP")
@@ -172,3 +249,5 @@ class Command(BaseCommand):
         parse_growth_data(bag_of_words, 'data_imports/human-tech.json', 'mth_2016')
         parse_growth_data(bag_of_words, 'data_imports/mat-high.json', 'mlmp_2016')
         parse_growth_data(bag_of_words, 'data_imports/mat-tech.json', 'mtmp_2016')
+        mockup_missing_data()
+        import_quizes()

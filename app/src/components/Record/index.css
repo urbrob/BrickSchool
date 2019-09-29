@@ -33,7 +33,7 @@
   font-size: 15px;
 }
 .recordStatistics {
-  /* background-color: yellow;*/
+  /* background-color: yellow; */
   width: 25vw;
   margin-top: 15px;
   margin-left: 15px;
@@ -48,13 +48,14 @@
   text-align: center;
 }
 .wsk {
-  font-size: 30px;
-  padding: 15px 20px;
+  font-size: 15px;
+  padding-top: 22.5px;
   border-style: solid;
   border-radius: 100%;
   border-color: #ffae3c;
   border-width: 2px;
-  height: 100%;
+  height: 75px;
+  width:75px;
 }
 .badge {
   text-align: center;
@@ -67,4 +68,7 @@ img {
   height: 60%;
   width: 60%;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1200px) {
 }

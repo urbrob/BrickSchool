@@ -21,8 +21,9 @@ const SearchResults = () => {
   const [filterType, setFilterType] = useState(""); // string
   const [filterIsPublic, setFilterIsPublic] = useState(true); // bool
   const [filterPerspectiveBadge, setFilterPerspectiveBadge] = useState(""); // string
+  const [filterWsk, setFilterWsk] = useState(0); // string
 
-  console.log("filter location:", filterLocation);
+  console.log("filter location:", filterWsk);
 
   const [isFiltered, setIsFiltered] = useState(false);
 
@@ -32,7 +33,9 @@ const SearchResults = () => {
     filterName,
     filterType,
     filterIsPublic,
-    filterLocation
+    filterLocation,
+    filterPerspectiveBadge,
+    filterWsk
   );
 
   const [isSorted, triggerSorting] = useState(false);
@@ -54,36 +57,61 @@ const SearchResults = () => {
             backgroundColor: "#707070"
           }}
         >
-          <p style={{ margin: "10px 30px", color: "white" }}>
-            Typ szkoły: status
-          </p>
-          <p style={{ margin: "10px 30px", color: "white" }}>
-            Publiczna/Prywatna: status
-          </p>
-          <p style={{ margin: "10px 30px", color: "white" }}>
-            Odznaka Perspektyw: status
-          </p>
           <div
             style={{
-              marginLeft: "350px",
+              marginLeft: "5px",
+              marginRight: "10vw",
               color: "white",
               display: "inline-flex"
             }}
           >
-            <SortMenu
-              schools={schools}
-              trigger={triggerSorting}
-              refresh={refreshList}
-            />
-            <FiltersDrawer
-              setIsFilteredParent={setIsFiltered}
-              setFilterNameParent={setFilterName}
-              setFilterTypeParent={setFilterType}
-              setFilterIsPublicParent={setFilterIsPublic}
-              setFilterPerspectiveBadgeParent={setFilterPerspectiveBadge}
-              setFilterLocationParent={setFilterLocation}
-            />
+            <span style={{ marginRight: "10px" }}>
+              <SortMenu
+                schools={schools}
+                trigger={triggerSorting}
+                refresh={refreshList}
+              />
+            </span>
+            <span style={{ marginRight: "10px" }}>
+              <FiltersDrawer
+                setIsFilteredParent={setIsFiltered}
+                setFilterNameParent={setFilterName}
+                setFilterTypeParent={setFilterType}
+                setFilterIsPublicParent={setFilterIsPublic}
+                setFilterPerspectiveBadgeParent={setFilterPerspectiveBadge}
+                setFilterLocationParent={setFilterLocation}
+                setFilterWskParent={setFilterWsk}
+              />
+            </span>
           </div>
+          {filterType ? (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Typ szkoły: {filterType}
+            </p>
+          ) : (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Typ szkoły: wszystkie
+            </p>
+          )}
+          <p style={{ margin: "10px 30px", color: "white" }}>
+            Publiczna/Prywatna: {filterIsPublic ? "Publiczna" : "Prywatna"}
+          </p>
+          {filterPerspectiveBadge ? (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Odznaka Perspektyw: {filterPerspectiveBadge}
+            </p>
+          ) : (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Odznaka Perspektyw: nie wybrano
+            </p>
+          )}
+          {filterWsk ? (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              WSK: powyzej {filterWsk}
+            </p>
+          ) : (
+            <p style={{ margin: "10px 30px", color: "white" }}>WSK: wszystko</p>
+          )}
         </div>
         <div
           title="searchResultsContainer"

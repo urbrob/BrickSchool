@@ -25,17 +25,21 @@ const Record = ({
       }}
     />
     <div className="recordInfo">
-      <div className="ranking">#{ranking} w rankingu wojewódzkim</div>
-        <Link to={`/detail/${pk}`}>
-            <div className="schoolName">{name}</div>
-        </Link>
+
+      <div className="ranking">
+        {ranking ? `#${ranking} w rankingu wojewódzkim` : ""}
+      </div>
+      <Link to={`/detail/${pk}`}>
+        <div className="schoolName">{name}</div>
+      </Link>
+      {console.log("badge sradge:", perspektywyBadge)}
 
       <div className="location">{location}</div>
     </div>
     <div className="recordStatistics">
       <div className="statisticsBox">
         <p>WSK</p>
-        <div className="wsk">{wsk}</div>
+        <div className="wsk">{wsk ? wsk : "N/A"}</div>
       </div>
       <div className="badge">
         <img src={badges.find(b => b.type === perspektywyBadge).icon} />

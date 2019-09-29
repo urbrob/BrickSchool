@@ -14,10 +14,9 @@ import SchoolDetails from "./components/SchoolDetails/SchoolDetails";
 import QuizComponent from "./views/QuizComponent";
 
 
-
 export const client = new ApolloClient({
   uri: "http://brickschool.mkubik.ovh:8000/graphql",
-  opts:{
+  opts: {
     mode: "no-cors"
   }
 });
