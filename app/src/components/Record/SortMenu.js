@@ -13,6 +13,42 @@ const sortingOptions = [
     value: "alphabetically_desc",
     name: "Nazwa (malejąco)",
     func: (a, b) => (a.name < b.name ? 1 : -1)
+  },
+  {
+    value: "wsk_desc",
+    name: "WSK (malejąco)",
+    func: (a, b) =>
+      a.statisticsSet[0].perspectiveBadge[0].wsk >
+      b.statisticsSet[0].perspectiveBadge[0].wsk
+        ? -1
+        : 1
+  },
+  {
+    value: "wsk_asc",
+    name: "WSK (rosnąco)",
+    func: (a, b) =>
+      a.statisticsSet[0].perspectiveBadge[0].wsk <
+      b.statisticsSet[0].perspectiveBadge[0].wsk
+        ? -1
+        : -1
+  },
+  {
+    value: "rank_desc",
+    name: "Ranking (malejąco)",
+    func: (a, b) =>
+      a.statisticsSet[0].perspectiveBadge[0].localRating >
+      b.statisticsSet[0].perspectiveBadge[0].localRating
+        ? 1
+        : -1
+  },
+  {
+    value: "rank_asc",
+    name: "Ranking (rosnąco)",
+    func: (a, b) =>
+      a.statisticsSet[0].perspectiveBadge[0].localRating <
+      b.statisticsSet[0].perspectiveBadge[0].localRating
+        ? 1
+        : -1
   }
 ];
 
@@ -28,7 +64,7 @@ const SortMenu = ({ schools, trigger, refresh }) => {
     <div>
       <Select
         placeholder="Sortuj"
-        style={{ width: 120 }}
+        style={{ width: 250 }}
         onChange={handleChange}
       >
         {sortingOptions.map(s => (

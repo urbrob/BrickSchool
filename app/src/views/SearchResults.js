@@ -21,8 +21,9 @@ const SearchResults = () => {
   const [filterType, setFilterType] = useState(""); // string
   const [filterIsPublic, setFilterIsPublic] = useState(true); // bool
   const [filterPerspectiveBadge, setFilterPerspectiveBadge] = useState(""); // string
+  const [filterWsk, setFilterWsk] = useState(0); // string
 
-  console.log("filter location:", filterLocation);
+  console.log("filter location:", filterWsk);
 
   const [isFiltered, setIsFiltered] = useState(false);
 
@@ -32,7 +33,9 @@ const SearchResults = () => {
     filterName,
     filterType,
     filterIsPublic,
-    filterLocation
+    filterLocation,
+    filterPerspectiveBadge,
+    filterWsk
   );
 
   const [isSorted, triggerSorting] = useState(false);
@@ -77,18 +80,38 @@ const SearchResults = () => {
                 setFilterIsPublicParent={setFilterIsPublic}
                 setFilterPerspectiveBadgeParent={setFilterPerspectiveBadge}
                 setFilterLocationParent={setFilterLocation}
+                setFilterWskParent={setFilterWsk}
               />
             </span>
           </div>
+          {filterType ? (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Typ szkoły: {filterType}
+            </p>
+          ) : (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Typ szkoły: wszystkie
+            </p>
+          )}
           <p style={{ margin: "10px 30px", color: "white" }}>
-            Typ szkoły: status
+            Publiczna/Prywatna: {filterIsPublic ? "Publiczna" : "Prywatna"}
           </p>
-          <p style={{ margin: "10px 30px", color: "white" }}>
-            Publiczna/Prywatna: status
-          </p>
-          <p style={{ margin: "10px 30px", color: "white" }}>
-            Odznaka Perspektyw: status
-          </p>
+          {filterPerspectiveBadge ? (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Odznaka Perspektyw: {filterPerspectiveBadge}
+            </p>
+          ) : (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              Odznaka Perspektyw: nie wybrano
+            </p>
+          )}
+          {filterWsk ? (
+            <p style={{ margin: "10px 30px", color: "white" }}>
+              WSK: powyzej {filterWsk}
+            </p>
+          ) : (
+            <p style={{ margin: "10px 30px", color: "white" }}>WSK: wszystko</p>
+          )}
         </div>
         <div
           title="searchResultsContainer"

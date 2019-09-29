@@ -25,6 +25,7 @@ const Record = ({
       }}
     />
     <div className="recordInfo">
+
       <div className="ranking">
         {ranking ? `#${ranking} w rankingu wojewódzkim` : ""}
       </div>
@@ -32,6 +33,7 @@ const Record = ({
         <div className="schoolName">{name}</div>
       </Link>
       {console.log("badge sradge:", perspektywyBadge)}
+
       <div className="location">{location}</div>
     </div>
     <div className="recordStatistics">

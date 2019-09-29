@@ -10,7 +10,8 @@ const FiltersDrawer = ({
   setFilterTypeParent,
   setFilterIsPublicParent,
   setFilterPerspectiveBadgeParent,
-  setFilterLocationParent
+  setFilterLocationParent,
+  setFilterWskParent
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -19,6 +20,7 @@ const FiltersDrawer = ({
   const [filterType, setFilterType] = useState(""); // string
   const [filterIsPublic, setFilterIsPublic] = useState(true); // bool
   const [filterPerspectiveBadge, setFilterPerspectiveBadge] = useState(""); // string
+  const [filterWsk, setFilterWsk] = useState(0); // string
 
   const showDrawer = () => {
     setIsVisible(!isVisible);
@@ -32,8 +34,9 @@ const FiltersDrawer = ({
     setFilterNameParent(filterName);
     setFilterTypeParent(filterType);
     setFilterIsPublicParent(filterIsPublic);
-    setFilterPerspectiveBadgeParent(setFilterPerspectiveBadgeParent);
+    setFilterPerspectiveBadgeParent(filterPerspectiveBadge);
     setFilterLocationParent(filterLocation);
+    setFilterWskParent(filterWsk);
     setIsFilteredParent(true);
     setIsVisible(false);
   };
@@ -125,6 +128,19 @@ const FiltersDrawer = ({
                   <Option value="braz">Brązowa</Option>
                   <Option value="srebro">Srebrna</Option>
                   <Option value="zloto">Złota</Option>
+                </Select>
+              </Form.Item>
+              <Form.Item label="WSK">
+                <Select
+                  placeholder="Wybierz próg WSK"
+                  onChange={e => {
+                    setFilterWsk(parseInt(e, 10));
+                    console.log("type filter:", e);
+                  }}
+                >
+                  <Option value="25">25</Option>
+                  <Option value="50">50</Option>
+                  <Option value="75">75</Option>
                 </Select>
               </Form.Item>
             </Col>
