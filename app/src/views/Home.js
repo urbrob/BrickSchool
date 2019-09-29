@@ -10,7 +10,7 @@ const HomePage = () => {
     <div className="Layout">
       <HeaderMenu />
       <ContentWrapper>
-          <HomeSearchBox/>
+        <HomeSearchBox />
       </ContentWrapper>
       <FooterCredits />
     </div>
