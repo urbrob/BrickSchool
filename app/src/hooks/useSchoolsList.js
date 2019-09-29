@@ -32,8 +32,8 @@ const SCHOOLS_QUERY = gql`
           specialization
           isPublic
           pk
-          statisticsSet{
-            perspectiveBadge{
+          statisticsSet {
+            perspectiveBadge {
               localRating
               wsk
               badge
@@ -51,7 +51,8 @@ const useSchoolsList = (
   filterName,
   filterType,
   filterIsPublic,
-  filterLocation
+  filterLocation,
+  filterPerspectiveBadge
 ) => {
   const dupa = useQuery(SCHOOLS_QUERY, {
     variables: {
@@ -59,7 +60,8 @@ const useSchoolsList = (
       filterName,
       filterType,
       filterIsPublic,
-      filterLocation
+      filterLocation,
+      filterPerspectiveBadge
     }
   });
 

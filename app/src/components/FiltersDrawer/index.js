@@ -124,10 +124,9 @@ const FiltersDrawer = ({
                     console.log("type filter:", e);
                   }}
                 >
-                  <Option value="brak">Brak</Option>
-                  <Option value="braz">Brązowa</Option>
-                  <Option value="srebro">Srebrna</Option>
-                  <Option value="zloto">Złota</Option>
+                  <Option value="bronze">Wszystkie</Option>
+                  <Option value="silver">Srebrne i złote</Option>
+                  <Option value="gold">Tylko złote</Option>
                 </Select>
               </Form.Item>
               <Form.Item label="WSK">
