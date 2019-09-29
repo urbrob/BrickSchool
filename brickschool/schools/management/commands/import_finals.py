@@ -3,6 +3,7 @@ from django.db.models import Q
 from schools.models import School, Statistics, FinalExam, PerspectiveBadge
 from difflib import SequenceMatcher
 from collections import defaultdict
+import json
 import csv
 
 def similiar(str1, str2):
@@ -117,6 +118,34 @@ def perspective_high_school(bag_of_words):
             )
 
 
+    def parse_growth_data(bag_of_words, json_file):
+        with open(json_file) as json_f:
+            data = json.load(json_f)['mlp_2016']
+            subject = data['skrot']
+            for school_data in data['szkoly']:
+
+                school = School.objects.filter(location__icontains=school_data['adres'].split(',')[0])
+                for word in school_data['nazwa'].split(' '):
+                    if word in bag_of_words:
+                        try:
+                            school = school.filter(name__icontains=word)
+                            if school.count() == 1:
+                                school = school.get()
+                                break
+                        except:
+                            pass
+                if isinstance(school, School):
+                    if subject == 'język polski':
+                        stats = Statistics.objects.filter(
+                            human_ewd_rate=float(school_data['okresy']['ewd']['pkt']),
+                            human_ewd_exam_rate=float(school_data['okresy']['egz']['pkt']),
+                        )
+                    else:
+                        stats = Statistics.objects.filter(
+                            math_ewd_rate=float(school_data['okresy']['ewd']['pkt']),
+                            math_ewd_exam_rate=float(school_data['okresy']['egz']['pkt']),
+                        )
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         load_finals_avg_file('data_imports/podstawy2.csv', "PP")
@@ -129,3 +158,7 @@ class Command(BaseCommand):
                 bag_of_words[word] += 1
         bag_of_words = {key: value  for key, value in bag_of_words.items() if value == 1}
         perspective_high_school(bag_of_words.keys())
+        parse_growth_data(bag_of_words, 'data_imports/human-high.json')
+        parse_growth_data(bag_of_words, 'data_imports/human-tech.json')
+        parse_growth_data(bag_of_words, 'data_imports/mat-high.json')
+        parse_growth_data(bag_of_words, 'data_imports/mat-tech.json')
