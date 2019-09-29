@@ -37,6 +37,10 @@ class Statistics(models.Model):
 	year = models.CharField(max_length=255)
 	staff_amount = models.IntegerField(null=True)
 	sport_ranking = models.IntegerField(null=True)
+	human_ewd_rate = models.FloatField(null=True)
+	human_ewd_exam_rate = models.FloatField(null=True)
+	math_ewd_rate = models.FloatField(null=True)
+	math_ewd_exam_rate = models.FloatField(null=True)
 
 
 class FinalExam(models.Model):

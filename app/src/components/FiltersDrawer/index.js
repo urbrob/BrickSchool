@@ -4,13 +4,37 @@ import "./index.css";
 
 const { Option } = Select;
 
-const FiltersDrawer = () => {
+const FiltersDrawer = ({
+  setIsFilteredParent,
+  setFilterNameParent,
+  setFilterTypeParent,
+  setFilterIsPublicParent,
+  setFilterPerspectiveBadgeParent,
+  setFilterLocationParent
+}) => {
   const [isVisible, setIsVisible] = useState(false);
+
+  const [filterName, setFilterName] = useState(""); // string
+  const [filterLocation, setFilterLocation] = useState(""); // string
+  const [filterType, setFilterType] = useState(""); // string
+  const [filterIsPublic, setFilterIsPublic] = useState(true); // bool
+  const [filterPerspectiveBadge, setFilterPerspectiveBadge] = useState(""); // string
+
   const showDrawer = () => {
     setIsVisible(!isVisible);
   };
 
   const onClose = () => {
+    setIsVisible(false);
+  };
+
+  const onSubmit = () => {
+    setFilterNameParent(filterName);
+    setFilterTypeParent(filterType);
+    setFilterIsPublicParent(filterIsPublic);
+    setFilterPerspectiveBadgeParent(setFilterPerspectiveBadgeParent);
+    setFilterLocationParent(filterLocation);
+    setIsFilteredParent(true);
     setIsVisible(false);
   };
 
@@ -36,19 +60,37 @@ const FiltersDrawer = () => {
           <Row gutter={16}>
             <Col span={12}>
               <Form.Item label="Nazwa szkoły">
-                <Input placeholder="Nazwa" />
+                <Input
+                  placeholder="Nazwa"
+                  onChange={e => {
+                    setFilterName(e.target.value);
+                    console.log("name filter:", e.target.value);
+                  }}
+                />
               </Form.Item>
             </Col>
             <Col span={12}>
-              <Form.Item label="Maksymalna odległość">
-                <Input placeholder={"Max odległość"} />
+              <Form.Item label="Lokalizacja">
+                <Input
+                  placeholder={"Miasto lub województwo"}
+                  onChange={e => {
+                    setFilterLocation(e.target.value);
+                    console.log("location filter:", e.target.value);
+                  }}
+                />
               </Form.Item>
             </Col>
           </Row>
           <Row gutter={16}>
             <Col span={12}>
               <Form.Item label="Typ szkoły">
-                <Select placeholder="Wybierz typ szkoły">
+                <Select
+                  placeholder="Wybierz typ szkoły"
+                  onChange={e => {
+                    setFilterType(e);
+                    console.log("type filter:", e);
+                  }}
+                >
                   <Option value="liceum">Liceum</Option>
                   <Option value="technikum">Technikum</Option>
                 </Select>
@@ -56,9 +98,15 @@ const FiltersDrawer = () => {
             </Col>
             <Col span={12}>
               <Form.Item label="Publiczna/Prywatna">
-                <Select placeholder="Wybierz typ szkoły">
-                  <Option value="prywatna">Prywatna</Option>
-                  <Option value="publiczna">Publiczna</Option>
+                <Select
+                  placeholder="Wybierz typ szkoły"
+                  onChange={e => {
+                    setFilterIsPublic(e);
+                    console.log("type filter:", e);
+                  }}
+                >
+                  <Option value={false}>Prywatna</Option>
+                  <Option value={true}>Publiczna</Option>
                 </Select>
               </Form.Item>
             </Col>
@@ -66,19 +114,17 @@ const FiltersDrawer = () => {
           <Row gutter={16}>
             <Col span={12}>
               <Form.Item label="Odznaka Perspektyw">
-                <Select placeholder="Wybierz typ odznaki">
+                <Select
+                  placeholder="Wybierz typ odznaki"
+                  onChange={e => {
+                    setFilterPerspectiveBadge(e);
+                    console.log("type filter:", e);
+                  }}
+                >
                   <Option value="brak">Brak</Option>
                   <Option value="braz">Brązowa</Option>
                   <Option value="srebro">Srebrna</Option>
                   <Option value="zloto">Złota</Option>
-                </Select>
-              </Form.Item>
-            </Col>
-            <Col span={12}>
-              <Form.Item label="Publiczna/Prywatna">
-                <Select placeholder="Wybierz typ szkoły">
-                  <Option value="prywatna">Prywatna</Option>
-                  <Option value="publiczna">Publiczna</Option>
                 </Select>
               </Form.Item>
             </Col>
@@ -88,7 +134,7 @@ const FiltersDrawer = () => {
           <Button onClick={onClose} style={{ marginRight: 8 }}>
             Cancel
           </Button>
-          <Button onClick={onClose} type="primary">
+          <Button onClick={onSubmit} type="primary">
             Submit
           </Button>
         </div>

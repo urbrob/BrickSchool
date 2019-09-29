@@ -3,6 +3,7 @@ from django.db.models import Q
 from schools.models import School, Statistics, FinalExam, PerspectiveBadge
 from difflib import SequenceMatcher
 from collections import defaultdict
+import json
 import csv
 
 def similiar(str1, str2):
@@ -116,6 +117,45 @@ def perspective_high_school(bag_of_words):
             	wsk=float(wsk)
             )
 
+def float_my(string):
+    if string:
+        return float(string)
+    return None
+
+
+def parse_growth_data(bag_of_words, json_file, main_head):
+    with open(json_file) as json_f:
+        data = json.load(json_f)[main_head]
+        subject = data['skrot']
+        for school_data in data['szkoly']:
+
+            school = School.objects.filter(location__icontains=school_data['adres'].split(',')[0])
+            for word in school_data['nazwa'].split(' '):
+                if word in bag_of_words:
+                    try:
+                        school = school.filter(name__icontains=word)
+                        if school.count() == 1:
+                            school = school.get()
+                            break
+                    except:
+                        pass
+            if isinstance(school, School):
+                try:
+                    if subject == 'humanistyczny' or subject == 'język polski':
+                        data = school_data['okresy']['2016-2018']
+                        stats = Statistics.objects.filter(school_id=school.id).update(
+                            human_ewd_rate=float_my(data['ewd']['pkt']),
+                            human_ewd_exam_rate=float_my(data['egz']['pkt']),
+                        )
+                    else:
+                        import pdb; pdb.set_trace()
+                        stats = Statistics.objects.filter(school_id=school.id).update(
+                            math_ewd_rate=float_my(data['ewd']['pkt']),
+                            math_ewd_exam_rate=float_my(data['egz']['pkt']),
+                        )
+                except KeyError:
+                    pass
+
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
@@ -129,3 +169,7 @@ class Command(BaseCommand):
                 bag_of_words[word] += 1
         bag_of_words = {key: value  for key, value in bag_of_words.items() if value == 1}
         perspective_high_school(bag_of_words.keys())
+        parse_growth_data(bag_of_words, 'data_imports/human-high.json', 'mlp_2016')
+        parse_growth_data(bag_of_words, 'data_imports/human-tech.json', 'mth_2016')
+        parse_growth_data(bag_of_words, 'data_imports/mat-high.json', 'mlmp_2016')
+        parse_growth_data(bag_of_words, 'data_imports/mat-tech.json', 'mtmp_2016')

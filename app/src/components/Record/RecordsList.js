@@ -5,11 +5,8 @@ import school_placeholder1 from "../../images/school_placeholder1.jpg";
 import school_placeholder2 from "../../images/school_placeholder2.jpg";
 import school_placeholder3 from "../../images/school_placeholder3.jpg";
 import Record from ".";
-import useSchoolsList from "../../hooks/useSchoolsList";
 
-const RecordsList = () => {
-  const [schools, loading] = useSchoolsList(20);
-
+const RecordsList = ({ schools }) => {
   const getRecord = index => {
     const formattedLocation = `${schools[index].location} ${schools[index].city}, ${schools[index].voivodship}`;
 
@@ -27,7 +24,6 @@ const RecordsList = () => {
     );
   };
 
-  console.log("schools, loading: ", schools, loading);
   return (
     <Virtuoso
       totalCount={schools.length}
