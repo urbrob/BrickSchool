@@ -31,12 +31,12 @@ class PerspectiveBadge(DjangoObjectType):
         model = PerspectiveBadge
 
     def resolve_badge(self, info):
-        if self.position_global:
-            if self.position_global < 100:
+        if self.global_rating:
+            if self.global_rating < 100:
                 return "gold"
-            if self.position_global < 200:
+            if self.global_rating < 200:
                 return "silver"
-            if self.position_global < 500:
+            if self.global_rating < 500:
                 return "bronze"
         return "shit"
 
