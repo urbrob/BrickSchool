@@ -54,6 +54,32 @@ const SearchResults = () => {
             backgroundColor: "#707070"
           }}
         >
+          <div
+            style={{
+              marginLeft: "5px",
+              marginRight: "10vw",
+              color: "white",
+              display: "inline-flex"
+            }}
+          >
+            <span style={{ marginRight: "10px" }}>
+              <SortMenu
+                schools={schools}
+                trigger={triggerSorting}
+                refresh={refreshList}
+              />
+            </span>
+            <span style={{ marginRight: "10px" }}>
+              <FiltersDrawer
+                setIsFilteredParent={setIsFiltered}
+                setFilterNameParent={setFilterName}
+                setFilterTypeParent={setFilterType}
+                setFilterIsPublicParent={setFilterIsPublic}
+                setFilterPerspectiveBadgeParent={setFilterPerspectiveBadge}
+                setFilterLocationParent={setFilterLocation}
+              />
+            </span>
+          </div>
           <p style={{ margin: "10px 30px", color: "white" }}>
             Typ szkoły: status
           </p>
@@ -63,27 +89,6 @@ const SearchResults = () => {
           <p style={{ margin: "10px 30px", color: "white" }}>
             Odznaka Perspektyw: status
           </p>
-          <div
-            style={{
-              marginLeft: "350px",
-              color: "white",
-              display: "inline-flex"
-            }}
-          >
-            <SortMenu
-              schools={schools}
-              trigger={triggerSorting}
-              refresh={refreshList}
-            />
-            <FiltersDrawer
-              setIsFilteredParent={setIsFiltered}
-              setFilterNameParent={setFilterName}
-              setFilterTypeParent={setFilterType}
-              setFilterIsPublicParent={setFilterIsPublic}
-              setFilterPerspectiveBadgeParent={setFilterPerspectiveBadge}
-              setFilterLocationParent={setFilterLocation}
-            />
-          </div>
         </div>
         <div
           title="searchResultsContainer"
