@@ -33,7 +33,7 @@
   font-size: 15px;
 }
 .recordStatistics {
-  /* background-color: yellow;*/
+  /* background-color: yellow; */
   width: 25vw;
   margin-top: 15px;
   margin-left: 15px;
@@ -67,4 +67,7 @@ img {
   height: 60%;
   width: 60%;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1200px) {
 }

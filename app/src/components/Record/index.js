@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Record = ({
   name,
-  schoolId,
+  pk,
   location,
   perspektywyBadge,
   schoolType,
@@ -25,8 +25,8 @@ const Record = ({
       }}
     />
     <div className="recordInfo">
-      <div className="ranking">#{schoolId} w rankingu wojewódzkim</div>
-        <Link to={`/detail/${schoolId}`}>
+      <div className="ranking">#{ranking} w rankingu wojewódzkim</div>
+        <Link to={`/detail/${pk}`}>
             <div className="schoolName">{name}</div>
         </Link>
 

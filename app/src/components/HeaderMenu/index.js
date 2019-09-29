@@ -9,7 +9,7 @@ const HeaderMenu = () => (
       <img src={logo} />
     </div>
     <div className="navMenu">
-      <div className="NavButtonsWrapper">
+      <div className="navButtonsWrapper">
         <NavButton redirect="/">Home</NavButton>
         <NavButton redirect="/records">Records</NavButton>
       </div>

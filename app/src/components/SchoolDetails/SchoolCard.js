@@ -6,9 +6,9 @@ import {Query} from "react-apollo";
 import MaturaResultsBox from "../MaturaResults/MaturaResultsBox"
 
 const SCHOOL_DETAILS_QUERY = gql`
-    query SchoolDetailsQuery{
+    query SchoolDetailsQuery($pk: Int!){
     
-        schoolDetail(id: 10){
+        schoolDetail(pk: $pk){
             name
             city
             location
@@ -31,8 +31,8 @@ const SCHOOL_DETAILS_QUERY = gql`
 export class SchoolCard extends Component {
 
     render() {
-        let schoolId = window.location.pathname.split("/").pop();
-        console.log(schoolId);
+        const pk = window.location.pathname.split("/").pop();
+        console.log(pk);
         return (
 
             <div
@@ -40,7 +40,7 @@ export class SchoolCard extends Component {
                     margin: "3%"
                 }}
             >
-               <Query query={SCHOOL_DETAILS_QUERY} >
+               <Query query={SCHOOL_DETAILS_QUERY} variables={{pk}} >
                     {({loading, error, data})=>{
                         if(loading) return(<h1>Loading...</h1>);
                         if(error) return (<h1>Error</h1>);

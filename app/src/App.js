@@ -14,8 +14,9 @@ import SchoolDetails from "./components/SchoolDetails/SchoolDetails";
 
 
 export const client = new ApolloClient({
-  uri: "http://brickschool.mkubik.ovh:8000/graphql",
-  opts:{
+  //uri: "http://brickschool.mkubik.ovh:8000/graphql",
+  uri: "http://localhost:8000/graphql",
+  opts: {
     mode: "no-cors"
   }
 });

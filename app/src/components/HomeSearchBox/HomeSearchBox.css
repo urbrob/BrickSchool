@@ -40,10 +40,6 @@ body {
   }
 }
 
-.carouselCaption {
-  background-color: aqua;
-}
-
 .carouselLabel {
   font-size: 5vw;
   color: white;
@@ -62,12 +58,14 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .carouselBox {
+    min-height: 94vh;
+  }
   .carouselCaption {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    background-color: aquamarine;
   }
 
   .carouselLabel {

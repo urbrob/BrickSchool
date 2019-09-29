@@ -31,6 +31,14 @@ const SCHOOLS_QUERY = gql`
           location
           specialization
           isPublic
+          pk
+          statisticsSet{
+            perspectiveBadge{
+              localRating
+              wsk
+              badge
+            }
+          }
         }
       }
     }
