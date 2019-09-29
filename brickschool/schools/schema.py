@@ -7,8 +7,7 @@ from graphene import relay
 
 
 class SchoolFilter(django_filters.FilterSet):
-
-    name = django_filters.CharFilter(lookup_expr='startswitch')
+    name = django_filters.CharFilter(lookup_expr='icontains')
     location = django_filters.CharFilter(lookup_expr='icontains')
     perspective_badge = django_filters.ChoiceFilter(method='perspective_badge_filter', choices=['gold', 'silver', 'bronze'])
     wsk = django_filters.NumberFilter(field_name='statistics__perspective_badge', lookup_expr='gt')
