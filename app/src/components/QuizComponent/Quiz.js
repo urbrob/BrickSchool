@@ -12,7 +12,7 @@ class Quiz extends Component {
         this.state = {
             title: this.props.title,
             questions: this.props.questionSet,
-            length: 3,//this.props.questionSet.length,
+            length: this.props.questionSet.length,
             counter: 0,
             answerOptions: [0, 1, 2, 3, 4, 5],
             answer: this.props.questionSet[0].title,
