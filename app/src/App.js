@@ -13,7 +13,6 @@ import SearchResults from "./views/SearchResults";
 import SchoolDetails from "./components/SchoolDetails/SchoolDetails";
 
 
-
 export const client = new ApolloClient({
   uri: "http://brickschool.mkubik.ovh:8000/graphql",
   opts:{
@@ -22,7 +21,6 @@ export const client = new ApolloClient({
 });
 
 function App() {
-
   return (
     <ApolloProvider client={client}>
       <Router>
@@ -36,7 +34,6 @@ function App() {
       </Router>
     </ApolloProvider>
   );
-
 }
 
 export default App;
