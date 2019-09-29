@@ -16,9 +16,21 @@ const RecordsList = ({ schools }) => {
         location={formattedLocation}
         thumbnail={school_placeholder1}
         schoolType={schools[index].typeSchool}
-        perspektywyBadge="bronze"
-        wsk= {schools[index].statisticsSet[0].perspectiveBadge[0] != null ? schools[index].statisticsSet[0].perspectiveBadge[0].wsk : 0 }
-        ranking={schools[index].statisticsSet[0].perspectiveBadge[0] != null ? schools[index].statisticsSet[0].perspectiveBadge[0].localRating : 0 }
+        perspektywyBadge={
+          schools[index].statisticsSet[0].perspectiveBadge[0] != null
+            ? schools[index].statisticsSet[0].perspectiveBadge[0].badge
+            : "bronze"
+        }
+        wsk={
+          schools[index].statisticsSet[0].perspectiveBadge[0] != null
+            ? schools[index].statisticsSet[0].perspectiveBadge[0].wsk
+            : 0
+        }
+        ranking={
+          schools[index].statisticsSet[0].perspectiveBadge[0] != null
+            ? schools[index].statisticsSet[0].perspectiveBadge[0].localRating
+            : 0
+        }
       />
     );
   };
