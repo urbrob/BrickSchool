@@ -141,13 +141,14 @@ def parse_growth_data(bag_of_words, json_file, main_head):
                         pass
             if isinstance(school, School):
                 try:
-                    if subject == 'język polski':
+                    if subject == 'humanistyczny' or subject == 'język polski':
                         data = school_data['okresy']['2016-2018']
                         stats = Statistics.objects.filter(school_id=school.id).update(
                             human_ewd_rate=float_my(data['ewd']['pkt']),
                             human_ewd_exam_rate=float_my(data['egz']['pkt']),
                         )
                     else:
+                        import pdb; pdb.set_trace()
                         stats = Statistics.objects.filter(school_id=school.id).update(
                             math_ewd_rate=float_my(data['ewd']['pkt']),
                             math_ewd_exam_rate=float_my(data['egz']['pkt']),
