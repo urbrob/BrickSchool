@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import { badges } from "./badges";
+import { Link } from "react-router-dom";
 
 const Record = ({
   name,
@@ -25,7 +26,10 @@ const Record = ({
     />
     <div className="recordInfo">
       <div className="ranking">#{schoolId} w rankingu wojewódzkim</div>
-      <div className="schoolName">{name}</div>
+        <Link to={`/detail/${schoolId}`}>
+            <div className="schoolName">{name}</div>
+        </Link>
+
       <div className="location">{location}</div>
     </div>
     <div className="recordStatistics">

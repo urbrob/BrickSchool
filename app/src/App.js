@@ -15,7 +15,10 @@ import SchoolDetails from "./components/SchoolDetails/SchoolDetails";
 
 
 export const client = new ApolloClient({
-  uri: "brickschool.mkubik.ovh:8000/graphql"
+  uri: "http://brickschool.mkubik.ovh:8000/graphql",
+  opts:{
+    mode: "no-cors"
+  }
 });
 
 function App() {
@@ -27,7 +30,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/404" component={NotFound} />
           <Route exact path="/records" component={SearchResults} />
-          <Route exact path="/detail" component={SchoolDetails} />
+          <Route exact path="/detail/:schoolId" component={SchoolDetails} />
           <Redirect to="/404" />
         </Switch>
       </Router>
