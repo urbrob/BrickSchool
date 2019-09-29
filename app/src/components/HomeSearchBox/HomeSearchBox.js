@@ -25,7 +25,7 @@ export class HomeSearchBox extends Component {
             <div className="carouselCaption">
               <div className="carouselLabel">Szybko i przejrzyście</div>
               <div className="carouselPropaganda">
-                Dowiedz się więcej o szkołach w 1 miejscu.
+                Dowiedz się więcej o szkołach w jednym miejscu.
               </div>
               <Link className="carouselLink" to={"/records"}>
                 <Button size={"large"}>Wypróbuj teraz</Button>
@@ -49,12 +49,12 @@ export class HomeSearchBox extends Component {
             }}
           >
             <div className="carouselCaption">
-              <div className="carouselLabel">Znajdź coś dla siebie</div>
+              <div className="carouselLabel">Niezdecydowanie? Pomożemy!</div>
               <div className="carouselPropaganda">
-                Nie masz pomysłu gdzie iść?
+                Zobacz co do Ciebie pasuje dzięki quizowi.
               </div>
-              <Link className="carouselLink" to={"/records"}>
-                <Button size={"large"}>Wyszukaj teraz</Button>
+              <Link className="carouselLink" to={"/quiz"}>
+                <Button size={"large"}>Zrób quiz</Button>
               </Link>
             </div>
           </Carousel.Caption>
