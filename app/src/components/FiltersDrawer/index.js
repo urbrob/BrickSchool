@@ -11,7 +11,8 @@ const FiltersDrawer = ({
   setFilterIsPublicParent,
   setFilterPerspectiveBadgeParent,
   setFilterLocationParent,
-  setFilterWskParent
+  setFilterWskParent,
+  triggerSorting
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -38,6 +39,7 @@ const FiltersDrawer = ({
     setFilterLocationParent(filterLocation);
     setFilterWskParent(filterWsk);
     setIsFilteredParent(true);
+    triggerSorting(false);
     setIsVisible(false);
   };
 
@@ -129,7 +131,7 @@ const FiltersDrawer = ({
                   <Option value="gold">Tylko złote</Option>
                 </Select>
               </Form.Item>
-              <Form.Item label="WSK">
+              <Form.Item label="WSK (! not functional !)">
                 <Select
                   placeholder="Wybierz próg WSK"
                   onChange={e => {

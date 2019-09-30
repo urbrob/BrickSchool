@@ -81,6 +81,7 @@ const SearchResults = () => {
                 setFilterPerspectiveBadgeParent={setFilterPerspectiveBadge}
                 setFilterLocationParent={setFilterLocation}
                 setFilterWskParent={setFilterWsk}
+                triggerSorting={triggerSorting}
               />
             </span>
           </div>
